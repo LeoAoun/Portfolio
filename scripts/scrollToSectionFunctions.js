@@ -22,7 +22,7 @@ function scrollToHardSkills() {
 
 function scrollToExperiencia() {
   section4.scrollIntoView({
-    block: "center",
+    block: "start",
     inline: "nearest",
     behavior: "smooth",
   });
@@ -38,7 +38,7 @@ function scrollToProjetos() {
 
 function scrollToContato() {
   section6.scrollIntoView({
-    block: "center",
+    block: "start",
     inline: "nearest",
     behavior: "smooth",
   });
