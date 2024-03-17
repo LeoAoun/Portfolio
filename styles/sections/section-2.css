@@ -69,7 +69,6 @@
   animation: lineSubtitleOut 0.3s ease forwards;
 }
 
-
 #section-2 .title:hover + .subtitle::before,
 #section-2 .title:hover + .subtitle::after,
 #section-2 .subtitle:hover::before,
@@ -157,7 +156,7 @@
 }
 
 #modal-cv > a > img {
-  width: 600px;
+  width: 37rem;
   position: absolute;
   left: 50%;
   top: 50%;
