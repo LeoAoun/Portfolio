@@ -35,6 +35,7 @@ function sendEmail(firstName, lastName, email, phone, message) {
           document.getElementById("firstname-input").value = "";
           document.getElementById("lastname-input").value = "";
           document.getElementById("email-input").value = "";
+          document.getElementById("phone-input").value = "";
           document.getElementById("message-input").value = "";
         } else alert("Erro ao enviar email.");
       })
