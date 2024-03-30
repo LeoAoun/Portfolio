@@ -1,8 +1,11 @@
+// Event when the page loads
 document.addEventListener("DOMContentLoaded", () => {
   window.scrollTo(0, 0);
   document.body.style.overflow = "hidden";
   nav.classList.add("nav-first-state");
 });
+
+// Event load to animate the loading screen 
 setTimeout(() => {
   window.scrollTo(0, 0);
   document.body.style.overflow = "hidden";

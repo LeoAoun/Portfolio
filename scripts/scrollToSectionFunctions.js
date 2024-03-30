@@ -55,6 +55,7 @@ function scrollToMenu() {
     .scrollIntoView({ block: "center", inline: "nearest", behavior: "smooth" });
 }
 
+// Event listener to animate the sections when the user scrolls
 document.addEventListener("scroll", () => {
   const position2 = section2.getBoundingClientRect();
   const position3 = section3.getBoundingClientRect();

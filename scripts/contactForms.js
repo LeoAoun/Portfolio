@@ -1,5 +1,6 @@
 const form = document.querySelector("form");
 
+// Function to send the email 
 function sendEmail(firstName, lastName, email, phone, message) {
   if (firstName === "" || lastName === "" || email === "" || message === "") {
     alert("Preencha todos os campos.");
@@ -43,6 +44,7 @@ function sendEmail(firstName, lastName, email, phone, message) {
   }
 }
 
+// Event listener to submit the form and send the email 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 

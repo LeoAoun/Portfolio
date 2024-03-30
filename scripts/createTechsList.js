@@ -21,6 +21,8 @@ const techs = [
   { name: "C", stack: "", src: "c" },
 ];
 
+
+// Create the techs list for the techs section 
 techs.forEach((tech) => {
   const li = document.createElement("li");
   

@@ -5,6 +5,7 @@ const menu = document.getElementById("menu");
 
 let clicked = false;
 
+// Event listener to animate the menu button and the nav
 menuButton.addEventListener("click", () => {
   const line1 = document.getElementById("line-1");
   const line2 = document.getElementById("line-2");

@@ -4,7 +4,7 @@ const next = document.querySelector("#next img");
 
 let counter = 0;
 
-// Função para calcular o valor de translateX com base na largura da viewport
+// Function to calculate the translateX value for the projects container 
 function calculateTranslateX() {
   if (window.innerWidth >= 1150) {
     return `calc(-62rem * ${counter})`;
@@ -25,7 +25,7 @@ function calculateTranslateX() {
   }
 }
 
-// Inicializar a imagem prev corretamente
+// Initialize the translateX value for the projects container
 if (counter === 0) prev.src = "images/projects/chevron.png";
 
 prev.addEventListener("click", () => {
@@ -42,6 +42,7 @@ prev.addEventListener("click", () => {
   }
 });
 
+
 next.addEventListener("click", () => {
   if (counter < projects.length - 1) {
     counter++;
@@ -56,7 +57,7 @@ next.addEventListener("click", () => {
   }
 });
 
-// Recalcular o translateX quando a janela for redimensionada
+// Resize event listener to adjust the translateX value for the projects container
 window.addEventListener("resize", () => {
   projects.forEach((project) => {
     project.style.transform = `translateX(${calculateTranslateX()})`;
