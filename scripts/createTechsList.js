@@ -32,7 +32,7 @@ techs.forEach((tech) => {
   span1.textContent = tech.stack;
 
   const img = document.createElement("img");
-  img.src = `../images/hardskills/${tech.src}.png`;
+  img.src = `./images/hardskills/${tech.src}.png`;
 
   const span2 = document.createElement("span");
   span2.classList.add("typewriter");
