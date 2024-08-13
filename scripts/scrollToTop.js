@@ -18,7 +18,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Opção para adicionar o comportamento de rolar até o topo ao clicar no botão
+// Scroll to the top of the page when the button is clicked
 buttonScrollToTop.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
