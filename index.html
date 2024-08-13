@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <div class="loading-background">
+      <div id="loading" class="loading">
+        <img src="images/LA.png" />
+      </div>
+    </div>
+
+    <button id="scroll-to-top">
+      <img src="images/scroll-to-top.png" />
+    </button>
+
+    <div id="background">
+      <div class="c1">
+        <div class="cloud"><img src="./images/cloud.png" /></div>
+      </div>
+      <div class="c2">
+        <div class="cloud"><img src="./images/cloud.png" /></div>
+      </div>
+      <div class="c3">
+        <div class="cloud"><img src="./images/cloud.png" /></div>
+      </div>
+      <div class="c4">
+        <div class="cloud"><img src="./images/cloud.png" /></div>
+      </div>
+      <div class="c5">
+        <div class="cloud"><img src="./images/cloud.png" /></div>
+      </div>
+      <div class="c6">
+        <div class="cloud"><img src="./images/cloud.png" /></div>
+      </div>
+      <div class="c7">
+        <div class="cloud"><img src="./images/cloud.png" /></div>
+      </div>
+    </div>
+
+    <nav id="nav" class="disable">
+      <ul id="menu">
+        <li onclick="scrollToSobre()">
+          <button>Sobre</button>
+        </li>
+        <li onclick="scrollToHardSkills()">
+          <button>Tecnologias</button>
+        </li>
+        <li onclick="scrollToExperiencia()">
+          <button>Experiência</button>
+        </li>
+        <li onclick="scrollToProjetos()">
+          <button>Projetos</button>
+        </li>
+        <li onclick="scrollToContato()">
+          <button>Contato</button>
+        </li>
+      </ul>
+      <button id="menu-button">
+        <div id="line-1" class="line-1"></div>
+        <div id="line-2" class="line-2"></div>
+        <div id="line-3" class="line-3"></div>
+      </button>
+    </nav>
+
+    <section id="section-1" class="disable">
+      <div class="container-1">
+        <div class="title-subtitle">
+          <span class="title"> Leonardo Aoun |</span>
+          <span class="subtitle">&lt;Full Stack Developer/&gt;</span>
+        </div>
+
+        <span class="summary">
+          Sou um jovem de 20 anos dedicado e apaixonado pela tecnologia. Além
+          das matérias obrigatórias da graduação, estudo desenvolvimento Web
+          Full Stack e Engenharia de Software por conta própria. Atualmente,
+          estou em busca de oportunidades de estágio para aplicar e aprimorar
+          minhas habilidades.
+        </span>
+
+        <div class="social-media">
+          <a href="https://github.com/LeoAoun" target="_blank"
+            ><svg viewBox="0 0 496 512">
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/leonardo-aoun/" target="_blank">
+            <svg viewBox="0 0 448 512">
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="https://wa.me/5511940325586" target="_blank"
+            ><svg viewBox="0 0 24 24">
+              <g>
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  class="wpp"
+                  d="M2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308a.961.961 0 0 0-.371.1 1.293 1.293 0 0 0-.294.228c-.12.113-.188.211-.261.306A2.729 2.729 0 0 0 6.9 9.62c.002.49.13.967.33 1.413.409.902 1.082 1.857 1.971 2.742.214.213.423.427.648.626a9.448 9.448 0 0 0 3.84 2.046l.569.087c.185.01.37-.004.556-.013a1.99 1.99 0 0 0 .833-.231c.166-.088.244-.132.383-.22 0 0 .043-.028.125-.09.135-.1.218-.171.33-.288.083-.086.155-.187.21-.302.078-.163.156-.474.188-.733.024-.198.017-.306.014-.373-.004-.107-.093-.218-.19-.265l-.582-.261s-.87-.379-1.401-.621a.498.498 0 0 0-.177-.041.482.482 0 0 0-.378.127v-.002c-.005 0-.072.057-.795.933a.35.35 0 0 1-.368.13 1.416 1.416 0 0 1-.191-.066c-.124-.052-.167-.072-.252-.109l-.005-.002a6.01 6.01 0 0 1-1.57-1c-.126-.11-.243-.23-.363-.346a6.296 6.296 0 0 1-1.02-1.268l-.059-.095a.923.923 0 0 1-.102-.205c-.038-.147.061-.265.061-.265s.243-.266.356-.41a4.38 4.38 0 0 0 .263-.373c.118-.19.155-.385.093-.536-.28-.684-.57-1.365-.868-2.041-.059-.134-.234-.23-.393-.249-.054-.006-.108-.012-.162-.016a3.385 3.385 0 0 0-.403.004z"
+                />
+              </g>
+            </svg>
+          </a>
+
+          <a href="mailto:leonardoaoundev@gmail.com" target="_blank"
+            ><svg viewBox="0 0 1024 1024">
+              <path
+                d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-80.8 108.9L531.7 514.4c-7.8 6.1-18.7 6.1-26.5 0L189.6 268.9A7.2 7.2 0 0 1 194 256h648.8a7.2 7.2 0 0 1 4.4 12.9z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="container-2"><img src="images/LA.png" alt="" /></div>
+    </section>
+
+    <section id="section-2" class="disable">
+      <div class="title-subtitle">
+        <span onclick="scrollToMenu()" class="title">Sobre</span>
+        <span class="subtitle">Quem sou eu?</span>
+      </div>
+      <div class="about">
+        <img class="me" src="./images/about/me.jpeg" />
+        <span class="description">
+          "Este é o meu espaço de trabalho, onde compartilho um pouco da minha
+          jornada e paixão pelo mundo da tecnologia. Atualmente, estou imerso na
+          Graduação em Sistemas de Informação pela maior universidade da América
+          Latina, a Universidade de São Paulo (USP), cursando meu sexto período.
+          Minha aventura na programação começou de maneira despretensiosa,
+          sempre fui fascinado pelo universo da tecnologia e nutria uma
+          curiosidade genuína sobre como aplicativos e sites eram construídos,
+          as ferramentas utilizadas, as animações e todos os detalhes que os
+          envolviam. À medida que mergulhava mais fundo nesse mundo, descobri as
+          múltiplas vertentes que a área de programação oferece. Entretanto,
+          recentemente, tenho direcionado meus estudos para a Engenharia de
+          Software e o Desenvolvimento Web Full Stack. Além das aulas da
+          graduação, busco de conhecimento por conta própria. Tenho investido em
+          cursos para expandir e aprimorar minhas habilidades na área de
+          Tecnologia, além de aproveitar-me de materiais gratuitos, participo de
+          eventos e dedico-me a bootcamps para elevar meu nível de expertise."
+        </span>
+      </div>
+      <div class="cv-div"><button id="button-modal-cv">Currículo</button></div>
+    </section>
+
+    <aside id="modal-cv">
+      <span id="cv-close">Clique para fechar</span>
+      <a
+        href="https://drive.google.com/file/d/1af49QDx8jLobC1YDkHhS0MdCnD5cPvuq/view?usp=share_link"
+        target="_blank"
+      >
+        <img id="cv" src="images/about/cv.png" />
+        <span class="cv-span">Clique para ver o currículo original em PDF</span>
+      </a>
+    </aside>
+
+    <section id="section-3" class="disable">
+      <div class="container">
+        <div class="title-subtitle">
+          <span class="title" onclick="scrollToMenu()">Tecnologias</span>
+          <span class="subtitle">O que eu sei</span>
+        </div>
+        <div id="particles-js"></div>
+        <ul id="techs-list"></ul>
+      </div>
+    </section>
+
+    <section id="section-4" class="disable">
+      <div class="title-subtitle">
+        <span class="title" onclick="scrollToMenu()"> Experiência </span>
+        <span class="subtitle">Onde trabalhei</span>
+      </div>
+      <div class="prodam">
+        <img class="prodam-img" src="./images/experience/prodam-logo.png" />
+        <span>
+          Trabalho como estagiário no núcleo GDO-2 da Empresa de Tecnologia da
+          Informação e Comunicação do Município de São Paulo, PRODAM/SP,
+          vinculado ao Sistema Integrado de Gestão de Pessoas e Competências
+          (SIGPEC) responsável pelo desenvolvimento e suporte do sistema de
+          gestão de pessoas da prefeitura de São Paulo. Atuo na manutenção do
+          SIGPEC e utilizo a linguagem de programação C++ com conhecimentos
+          básicos em SQL para corrigir bugs, auxiliar em testes e análises da
+          folha de pagamentos dos funcionários públicos.
+        </span>
+      </div>
+    </section>
+
+    <section id="section-5" class="disable">
+      <div class="title-subtitle">
+        <span onclick="scrollToMenu()" class="title"> Projetos de Estudo </span>
+        <span class="subtitle">Aplicações</span>
+      </div>
+
+      <div class="container">
+        <button id="previous">
+          <img src="images/projects/chevron-active.png" />
+        </button>
+
+        <div class="carousel">
+          <div class="project">
+            <div class="container-1">
+              <div class="video">
+                <video
+                  muted
+                  autoplay
+                  loop
+                  src="./videos/to-do-app-full-stack.mp4"
+                  type="video/mp4"
+                ></video>
+              </div>
+            </div>
+
+            <div class="container-2">
+              <div class="details">
+                <span class="project-title">To-Do App</span>
+                <div class="used-techs">
+                  <span>Tecnologias Usadas:</span>
+                  <img src="./images/hardskills/react.png" />
+                  <img src="./images/hardskills/css.png" />
+                  <img src="./images/hardskills/typescript.png" />
+                  <img src="./images/hardskills/nodejs.png" />
+                  <img src="./images/hardskills/prisma.png" />
+                  <img src="./images/hardskills/postgresql.png" />
+                  <img src="./images/hardskills/docker.png" />
+                </div>
+
+                <span class="description">
+                  Meu último projeto, até o momento, To-do App, é uma aplicação
+                  completa de lista de tarefas, desenvolvida com tecnologias
+                  modernas para lidarem com o front-end, back-end e database da
+                  aplicação, além de utilizar containers Docker para facilitar a
+                  implantação. Os usuários podem registrar, fazer login e
+                  gerenciar tarefas de forma eficiente, incluindo filtragens por
+                  prioridade, data de criação, completude e ordem alfabética.
+                </span>
+              </div>
+              <div class="buttons">
+                <button tabindex="-1" class="button-code">
+                  <a
+                    tabindex="-1"
+                    href="https://github.com/LeoAoun/To-Do-App-Full-Stack"
+                    target="_blank"
+                    >Código
+                  </a>
+                </button>
+                <button tabindex="-1" class="button-site-inactive">
+                  <a tabindex="-1">Site</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="container-1">
+              <div class="video">
+                <video
+                  muted
+                  autoplay
+                  loop
+                  src="./videos/rock-paper-scissors.mp4"
+                  type="video/mp4"
+                ></video>
+              </div>
+            </div>
+
+            <div class="container-2">
+              <div class="details">
+                <span class="project-title">Pedra, Papel e Tesoura</span>
+                <div class="used-techs">
+                  <span>Tecnologias Usadas:</span>
+                  <img src="./images/hardskills/html.png" />
+                  <img src="./images/hardskills/css.png" />
+                  <img src="./images/hardskills/javascript.png" />
+                </div>
+
+                <span class="description">
+                  Meu primeiro projeto de estudo em desenvolvimento web foi o
+                  jogo "Pedra, Papel e Tesoura". Inicialmente, desenvolvi-o para
+                  jogar apenas no navegador. Mais tarde, ao aprender a utilizar
+                  o "Electron"; um framework open source que permite o
+                  desenvolvimento de aplicações desktop usando componentes
+                  Front-End e Back-End; aprimorei meu projeto para funcionar
+                  fora da web.
+                </span>
+              </div>
+              <div class="buttons">
+                <button tabindex="-1" class="button-code">
+                  <a
+                    tabindex="-1"
+                    href="https://github.com/LeoAoun/Rock-Paper-Scissors"
+                    target="_blank"
+                    >Código
+                  </a>
+                </button>
+                <button tabindex="-1" class="button-site">
+                  <a
+                    tabindex="-1"
+                    href="https://leoaoun.github.io/Rock-Paper-Scissors/"
+                    target="_blank"
+                    >Site
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="container-1">
+              <div class="video">
+                <video
+                  muted
+                  autoplay
+                  loop
+                  src="./videos/pixel-art.mp4"
+                  type="video/mp4"
+                ></video>
+              </div>
+            </div>
+
+            <div class="container-2">
+              <div class="details">
+                <span class="project-title">Pixel Art</span>
+                <div class="used-techs">
+                  <span>Tecnologias Usadas:</span>
+                  <img src="./images/hardskills/react.png" />
+                  <img src="./images/hardskills/css.png" />
+                </div>
+
+                <span class="description">
+                  Pixel Art foi meu primeiro projeto utilizando React.js, uma
+                  biblioteca Front-End do JavaScript. Para pintar o quadro,
+                  clique em uma cor da paleta de cores e clique na parte do
+                  quadro que queira pintar, caso esteja em dúvida sobre qual cor
+                  utilizar, você pode apenas passar o mouse em cima do quadro
+                  com a cor selecionada para saber se a cor seria adequada.
+                  Curiosidade: também é possível pintar as letras do texto
+                </span>
+              </div>
+              <div class="buttons">
+                <button tabindex="-1" class="button-code">
+                  <a
+                    tabindex="-1"
+                    href="https://github.com/LeoAoun/Pixel-Art"
+                    target="_blank"
+                    >Código
+                  </a>
+                </button>
+                <button tabindex="-1" class="button-site">
+                  <a
+                    tabindex="-1"
+                    href="https://leoaoun.github.io/Pixel-Art/"
+                    target="_blank"
+                    >Site
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="container-1">
+              <div class="video">
+                <video
+                  muted
+                  autoplay
+                  loop
+                  src="./videos/tic-tac-toe-react.mp4"
+                  type="video/mp4"
+                ></video>
+              </div>
+            </div>
+
+            <div class="container-2">
+              <div class="details">
+                <span class="project-title">Três em linha</span>
+                <div class="used-techs">
+                  <span>Tecnologias Usadas:</span>
+                  <img src="./images/hardskills/react.png" />
+                  <img src="./images/hardskills/tailwindcss.png" />
+                </div>
+
+                <span class="description">
+                  Três em linha foi meu segundo projeto feito usando React.js,
+                  além de usar Tailwind CSS pela primeira vez, um framework CSS
+                  que permite criar layouts para suas aplicações web utilizando
+                  sua estrutura pronta. Diferentemente do projeto anterior, foi
+                  necessário utilizar mais conhecimentos de lógica para
+                  verificar as jogadas e o momento em que o jogo termina, além
+                  de alterar a tela de "fim de jogo" dependendo do resultado da
+                  partida. O jogo foi feito para 2 participantes, portanto basta
+                  apenas escolher a jogada que, automaticamente, o turno é
+                  alterado.
+                </span>
+              </div>
+              <div class="buttons">
+                <button tabindex="-1" class="button-code">
+                  <a
+                    tabindex="-1"
+                    href="https://github.com/LeoAoun/Tic-Tac-Toe-React"
+                    target="_blank"
+                    >Código
+                  </a>
+                </button>
+                <button tabindex="-1" class="button-site">
+                  <a
+                    tabindex="-1"
+                    href="https://leoaoun.github.io/Tic-Tac-Toe-React/"
+                    target="_blank"
+                    >Site
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="container-1">
+              <div class="video">
+                <video
+                  muted
+                  autoplay
+                  loop
+                  src="./videos/weather-app.mp4"
+                  type="video/mp4"
+                ></video>
+              </div>
+            </div>
+
+            <div class="container-2">
+              <div class="details">
+                <span class="project-title">Weather App</span>
+                <div class="used-techs">
+                  <span>Tecnologias Usadas:</span>
+                  <img src="./images/hardskills/html.png" />
+                  <img src="./images/hardskills/css.png" />
+                  <img src="./images/hardskills/javascript.png" alt="" />
+                </div>
+
+                <span class="description">
+                  Meu primeiro projeto utilizando uma API foi o Weather App, o
+                  qual foi desenvolvido usando HTML, CSS e JavaScript, com
+                  integração de uma API para fornecer informações sobre o clima
+                  de diversas cidades do mundo e outra API para buscar uma
+                  imagem aleatória relacionada à cidade. No entanto, o projeto
+                  enfrenta desafios com a API de imagens, às vezes retornando
+                  imagens não ligadas à cidade consultada e apresentando
+                  lentidão na busca.
+                </span>
+              </div>
+              <div class="buttons">
+                <button tabindex="-1" class="button-code">
+                  <a
+                    tabindex="-1"
+                    href="https://github.com/LeoAoun/Weather-App"
+                    target="_blank"
+                    >Código
+                  </a>
+                </button>
+                <button tabindex="-1" class="button-site">
+                  <a
+                    tabindex="-1"
+                    href="https://leoaoun.github.io/Weather-App/"
+                    target="_blank"
+                    >Site
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="container-1">
+              <div class="video">
+                <video
+                  muted
+                  autoplay
+                  loop
+                  src="./videos/mercado-livre.mp4"
+                  type="video/mp4"
+                ></video>
+              </div>
+            </div>
+
+            <div class="container-2">
+              <div class="details">
+                <span class="project-title">Mercado Livre</span>
+                <div class="used-techs">
+                  <span>Tecnologias Usadas:</span>
+                  <img src="./images/hardskills/react.png" />
+                  <img src="./images/hardskills/css.png" />
+                  <img src="./images/hardskills/typescript.png" alt="" />
+                </div>
+
+                <span class="description">
+                  Após estudar APIs, decidi aprofundar meus conhecimentos em
+                  TypeScript, uma linguagem de programação de código aberto que
+                  é uma extensão do JavaScript, a qual adiciona recursos
+                  avançados ao JavaScript, como a tipagem estática e interfaces;
+                  e desenvolvi um projeto de compras utilizando a API do Mercado
+                  Livre. Neste projeto, os usuários podem pesquisar produtos,
+                  adicioná-los ao carrinho e removê-los, tudo isso implementado
+                  com React e TypeScript.
+                </span>
+              </div>
+              <div class="buttons">
+                <button tabindex="-1" class="button-code">
+                  <a
+                    tabindex="-1"
+                    href="https://github.com/LeoAoun/Mercado-Livre-Site"
+                    target="_blank"
+                    >Código
+                  </a>
+                </button>
+                <button tabindex="-1" class="button-site">
+                  <a
+                    tabindex="-1"
+                    href="https://leoaoun.github.io/Mercado-Livre-Site/"
+                    target="_blank"
+                    >Site
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="next">
+          <img src="images/projects/chevron-active.png" />
+        </button>
+      </div>
+    </section>
+
+    <section id="section-6" class="disable">
+      <div class="title-subtitle">
+        <span onclick="scrollToMenu()" class="title"> Contato </span>
+        <span class="subtitle">fale comigo</span>
+      </div>
+
+      <div class="container">
+        <form>
+          <span>Envie um email:</span>
+
+          <div class="fullname">
+            <label for="firstname-input">
+              Nome
+              <input
+                id="firstname-input"
+                placeholder="Ex: Leonardo"
+                type="text"
+              />
+            </label>
+
+            <label for="lastname-input">
+              Sobrenome
+              <input id="lastname-input" placeholder="Ex: Aoun" type="text" />
+            </label>
+          </div>
+
+          <div class="email-phone">
+            <label for="email-input">
+              Email:
+              <input
+                name="email-input"
+                id="email-input"
+                placeholder="Ex: leonardoaoundev@gmail.com"
+                type="text"
+              />
+            </label>
+
+            <label for="phone-input">
+              Telefone (com DDD)
+              <input
+                id="phone-input"
+                placeholder="Ex: 11 94032-5586"
+                type="text"
+              />
+            </label>
+          </div>
+
+          <label for="message-input"
+            >Mensagem
+            <textarea
+              name="message-input"
+              id="message-input"
+              placeholder="Escreva sua mensagem aqui..."
+            ></textarea>
+          </label>
+
+          <input id="submit-email" type="submit" value="Enviar" />
+        </form>
+
+        <div class="details">
+          <div class="background-contact-info">
+            <div class="contact-info">
+              <span>Informações</span>
+              <div class="adress">
+                <div class="background-icon">
+                  <img src="images/icons/location.png" />
+                </div>
+                <span>Bosque da Saúde, São Paulo - SP</span>
+              </div>
+              <div class="email">
+                <div class="background-icon">
+                  <img src="images/icons/email.png" />
+                </div>
+
+                <span>leonardoaoundev@gmail.com</span>
+              </div>
+              <div class="phone">
+                <div class="background-icon">
+                  <img src="images/icons/phone.png" />
+                </div>
+
+                <span>(11)94032-5586</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10340.51366443144!2d-46.620073966403574!3d-23.607070400984664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5bae267ebe71%3A0xfc5413daa02b9f64!2sBosque%20da%20Sa%C3%BAde%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1709575922491!5m2!1spt-BR!2sbr"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2024 Leonardo Aoun - Todos os direitos reservados</span>
+    </footer>
+
+    <script async src="https://smtpjs.com/v3/smtp.js"></script>
+    <script defer src="./scripts/loading.js"></script>
+    <script defer src="./scripts/scrollToTop.js"></script>
+    <script defer src="./scripts/menu/menuHamburguerButtonEvent.js"></script>
+    <script defer src="./scripts/menu/scrollToSectionFunctions.js"></script>
+    <script defer src="./scripts/section-2/modalCV.js"></script>
+    <script
+      defer
+      src="./scripts/section-3/particles/particles.config.js"
+    ></script>
+    <script defer src="./scripts/section-3/particles/particles.js"></script>
+    <script defer src="./scripts/section-3/createTechsList.js"></script>
+    <script defer src="./scripts/section-5/carousel.js"></script>
+    <script defer src="./scripts/section-5/modal-inactive-button.js"></script>
+    <script async src="./scripts/section-6/contactForms.js"></script>
+  </body>
+</html>

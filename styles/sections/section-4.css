@@ -1,0 +1,114 @@
+.animate-section-4 {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+#section-4 {
+  background-color: #ffffff;
+
+  width: 90%;
+  padding-bottom: 5rem;
+  gap: 4rem;
+  margin: 0 auto 15rem auto;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  opacity: 0;
+  transform: translateY(-5rem);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#section-4 .title-subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  opacity: 0;
+  transform: translateY(-2rem);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#section-4 .title {
+  user-select: none;
+  cursor: pointer;
+  color: var(--background);
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+#section-4 .subtitle {
+  user-select: none;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  color: #2563eb;
+  font-weight: 500;
+  font-size: 1.2rem;
+  position: relative;
+  display: inline;
+}
+
+#section-4 .subtitle::before {
+  content: "";
+  display: block;
+  background-color: #000000;
+
+  width: 2rem;
+  height: 3px;
+
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 5px);
+
+  animation: lineSubtitleOut 0.3s ease forwards;
+}
+
+#section-4 .subtitle::after {
+  content: "";
+  display: block;
+  background-color: #000000;
+
+  width: 2rem;
+  height: 3px;
+
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 5px);
+
+  animation: lineSubtitleOut 0.3s ease forwards;
+}
+
+#section-4 .title:hover + .subtitle::before,
+#section-4 .title:hover + .subtitle::after,
+#section-4 .subtitle:hover::before,
+#section-4 .subtitle:hover::after {
+  animation: lineSubtitleIn 0.3s ease forwards;
+}
+
+#section-4 .prodam {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#section-4 .prodam-img {
+  width: auto;
+  align-self: center;
+  margin-left: 2rem;
+  height: 80px;
+}
+
+#section-4 .prodam span {
+  font-family: "Mulish", sans-serif;
+  align-self: center;
+  word-break: keep-all;
+  text-align: justify;
+
+  font-size: 1.3rem;
+  width: 60%;
+  padding-right: 2.5rem;
+  margin-left: 5rem;
+}

@@ -1,0 +1,177 @@
+.animate-section-3 {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+#section-3 {
+  color: white;
+
+  width: 90%;
+  padding-bottom: 5rem;
+  border-radius: 20px;
+  margin: 0 auto 15rem auto;
+
+  display: flex;
+
+  opacity: 0;
+  transform: translateY(-5rem);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#section-3 .container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+#section-3 .title-subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section-3 .title {
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+#section-3 .subtitle {
+  user-select: none;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--lightPurple);
+  font-weight: 500;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+#section-3 .subtitle::before {
+  content: "";
+  display: block;
+  background-color: #fff;
+
+  width: 2rem;
+  height: 3px;
+
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 5px);
+
+  animation: lineSubtitleOut 0.3s ease forwards;
+}
+
+#section-3 .subtitle::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+
+  width: 2rem;
+  height: 3px;
+
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 5px);
+
+  animation: lineSubtitleOut 0.3s ease forwards;
+}
+
+#section-3 .title:hover + .subtitle::before,
+#section-3 .title:hover + .subtitle::after,
+#section-3 .subtitle:hover::before,
+#section-3 .subtitle:hover::after {
+  animation: lineSubtitleIn 0.3s ease forwards;
+}
+
+#particles-js {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  transform: translateY(-5%);
+}
+
+#section-3 .container ul {
+  position: relative;
+  list-style: none;
+  pointer-events: none;
+  
+  width: 100%;
+  gap: 30px;
+  margin-top: 5rem;
+  
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#section-3 .tech {
+  outline: none;
+  user-select: none;
+  background-color: #0d161d;
+
+  width: 200px;
+  height: 120px;
+  border: 1px solid #808080;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  pointer-events: all;
+
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+
+#section-3 .tech:hover,
+#section-3 .tech:focus-visible {
+  border: 1px solid var(--purple);
+  transform: scale(1.1);
+}
+
+#section-3 .typewriter {
+  display: none;
+  color: var(--lightPurple);
+  font-family: monospace;
+  white-space: nowrap;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@keyframes CursorTech {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes TypingTech {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 100px;
+  }
+}
+
+#section-3 .tech:hover .typewriter,
+#section-3 .tech:focus-visible .typewriter {
+  border-right: 2px solid #fff;
+  display: block;
+  overflow: hidden;
+  animation: TypingTech 0.5s steps(9), CursorTech 0.5s step-end infinite alternate;
+}
+
+#section-3 .tech > img {
+  background-size: contain;
+  width: 4rem;
+  height: 4.4rem;
+}
+
+img[src="./images/hardskills/bootstrap.png"] {
+  scale: 0.9;
+}

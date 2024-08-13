@@ -1,0 +1,46 @@
+#scroll-to-top {
+  display: none;
+  cursor: pointer;
+  background-color: var(--purple);
+
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 3rem;
+  right: 5rem;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+#scroll-to-top:hover {
+  background-color: var(--darkPurple);
+}
+
+#scroll-to-top img {
+  width: 4rem;
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease;
+}
+
+#scroll-to-top:hover img {
+  transform: rotate(-90deg) translateX(3px);
+}
+
+@keyframes animateScrollToTop {
+  from {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-scroll-to-top {
+  display: block !important;
+  animation: animateScrollToTop 0.5s forwards;
+}

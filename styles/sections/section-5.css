@@ -1,0 +1,351 @@
+.animate-section-5 {
+  opacity: 1 !important;
+  transform: translate(0) !important;
+}
+
+#section-5 {
+  background-color: transparent;
+  background-color: var(--darkBackground);
+
+  width: 90%;
+  padding: 2rem 0 2rem;
+  gap: 2rem;
+  margin: 0 auto 15rem;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+
+  opacity: 0;
+  transform: translateY(-5rem);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#section-5 .title-subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  opacity: 0;
+  transform: translateY(-2rem);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#section-5 .title {
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#section-5 .subtitle {
+  user-select: none;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--lightPurple);
+  font-weight: 500;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+#section-5 .subtitle::before {
+  content: "";
+  display: block;
+  background-color: #fff;
+
+  width: 2rem;
+  height: 3px;
+
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 5px);
+
+  animation: lineSubtitleOut 0.3s ease forwards;
+}
+
+#section-5 .subtitle::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+
+  width: 2rem;
+  height: 3px;
+
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 5px);
+
+  animation: lineSubtitleOut 0.3s ease forwards;
+}
+
+#section-5 .title:hover + .subtitle::before,
+#section-5 .title:hover + .subtitle::after,
+#section-5 .subtitle:hover::before,
+#section-5 .subtitle:hover::after {
+  animation: lineSubtitleIn 0.3s ease forwards;
+}
+
+#section-5 .container {
+  background-color: var(--darkBackground);
+  width: 100%;
+  gap: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-5 #next,
+#section-5 #previous {
+  user-select: none;
+  background-color: transparent;
+  border: none;
+
+  display: flex;
+
+  &:focus-visible {
+    outline: 1px solid white;
+  }
+}
+
+#section-5 #next img,
+#section-5 #previous img {
+  background-color: transparent;
+  border: none;
+  height: 3rem;
+  width: 2.5rem;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--darkPurple);
+  }
+}
+
+#section-5 #next img {
+  transform: rotate(180deg);
+  color: grey;
+}
+
+#section-5 .carousel {
+  width: 60rem;
+  gap: 2rem;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+}
+
+#section-5 .project {
+  font-family: Poppins, sans-serif;
+  background-color: var(--darkBackground);
+
+  min-width: 60rem;
+  max-width: 60rem;
+  padding: 2rem;
+  border-radius: 1rem;
+
+  display: flex;
+  align-items: center;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+#section-5 .container-1 {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transform: translateX(-5rem);
+  transition: opacity 2s ease, transform 1.5s ease;
+}
+
+#section-5 .container-1 .video {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#section-5 .container-1 .video video {
+  width: 100%;
+}
+
+#section-5 .container-2 {
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transform: translateX(5rem);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#section-5 .container-2 .details {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+#section-5 .container-2 .details .project-title {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#section-5 .container-2 .details .used-techs {
+  gap: 0.5rem;
+  margin: 1rem 0 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#section-5 .container-2 .details .used-techs span {
+  color: var(--lightPurple);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#section-5 .container-2 .details .used-techs img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+#section-5 .container-2 .description {
+  color: #fff;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+#section-5 .container-2 .buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+#section-5 .container-2 .buttons button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: 6rem;
+  height: 3rem;
+
+  &:focus-visible {
+    outline: 2px solid white;
+  }
+}
+
+#section-5 .container-2 .buttons a {
+  color: white;
+  outline: none;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-5 .container-2 .buttons .button-code {
+  z-index: 2;
+  background-color: var(--background);
+  border: 1px solid var(--blue);
+  position: relative;
+}
+
+#section-5 .container-2 .buttons .button-code::before {
+  content: "";
+  display: block;
+  background-color: var(--blue);
+  z-index: -1;
+
+  width: 0;
+  height: 3rem;
+
+  position: absolute;
+  top: -1px;
+  left: -1px;
+
+  transition: width 0.3s ease-out;
+}
+
+#section-5 .container-2 .buttons .button-code:hover::before {
+  width: 6rem;
+}
+
+#section-5 .container-2 .buttons .button-site {
+  background-color: var(--purple);
+  transition: background-color 0.2s ease-out;
+
+  position: relative;
+
+  &:hover {
+    background-color: var(--darkPurple);
+  }
+}
+
+#section-5 .container-2 .buttons .button-site-inactive {
+  background-color: #ffffff1a;
+  cursor: not-allowed;
+  position: relative;
+}
+
+#section-5 .container-2 .buttons .button-site-inactive::after {
+  content: "⚠️Site não hospedado...";
+  background-color: rgb(226, 21, 21);
+  color: rgb(255, 255, 255);
+
+  height: 4rem;
+  padding: 0 1rem;
+  border-radius: 8px;
+  z-index: 10;
+
+  display: flex;
+  text-align: justify;
+  align-items: center;
+
+  position: absolute;
+  top: -150%;
+  left: -1.5rem;
+
+  opacity: 0;
+  transform: translateY(-2rem);
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+#section-5 .container-2 .buttons .button-site-inactive:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#section-5 .container-2 .buttons .button-site-inactive a {
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+#section-5 .container-1 video::media-controls,
+#section-5 .container-1 video::media-controls-panel {
+  display: none;
+}
+
+#section-5 .container-1 video::-moz-controls {
+  display: none;
+}
+
+#section-5 .container-1 video::-ms-controls {
+  display: none;
+}

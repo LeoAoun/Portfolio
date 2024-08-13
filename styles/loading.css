@@ -1,0 +1,67 @@
+.loading-background {
+  background-color: var(--background);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+@keyframes loadTranslate {
+  0% {
+    left: 50%;
+    scale: 1;
+  }
+  85% {
+    scale: 0.1;
+  }
+  100% {
+    left: -100%;
+    scale: 0;
+  }
+}
+
+.animate-loading-translate {
+  animation: loadTranslate 1s cubic-bezier(1, 0.21, 0.06, 1.37) forwards;
+}
+
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading img {
+  user-select: none;
+  width: 9rem;
+  height: 6rem;
+  position: relative;
+}
+
+@keyframes loadFadeIn {
+  from {
+    transform: translate(0rem);
+  }
+  to {
+    transform: translate(-5rem);
+    opacity: 0;
+  }
+}
+
+.loading::after {
+  content: "";
+  background: linear-gradient(
+    95deg,
+    rgb(18, 30, 39, 1) 0%,
+    rgba(18, 30, 39, 1) 50%,
+    rgba(18, 30, 39, 0) 100%
+  );
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 6.3rem;
+
+  animation: loadFadeIn 5s ease forwards;
+}

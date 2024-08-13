@@ -1,0 +1,117 @@
+#section-1 {
+  width: 90%;
+  margin: 20rem auto 15rem auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#section-1 .container-1 {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-5rem);
+  opacity: 0;
+}
+
+@keyframes container1Animation {
+  from {
+    transform: translateY(-5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.animate-container-1 {
+  animation: container1Animation 2.5s cubic-bezier(0.5, 0, 0, 1) 0.4s forwards;
+}
+
+#section-1 .container-2 {
+  display: flex;
+  align-items: center;
+  transform: translateY(5rem);
+  opacity: 0;
+}
+
+@keyframes container2Animation {
+  from {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.animate-container-2 {
+  animation: container2Animation 2.5s cubic-bezier(0.5, 0, 0, 1) 0.4s forwards;
+}
+
+#section-1 .container-2 > img {
+  user-select: none;
+  width: 30rem;
+}
+
+#section-1 .title-subtitle {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#section-1 .title {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+#section-1 .subtitle {
+  color: var(--purple);
+  font-weight: 600;
+  font-size: 2.3rem;
+  margin-left: 4rem;
+
+  transform: translateX(1.5rem);
+  transition: transform 0.5s ease-out;
+}
+
+#section-1 .subtitle:hover {
+  transform: translateX(0);
+}
+
+#section-1 .summary {
+  font-family: "Mulish", sans-serif;
+  color: rgb(212, 212, 212);
+  text-align: justify;
+  font-size: 1.3rem;
+  font-weight: 400;
+  width: 500px;
+  margin-top: 2rem;
+}
+
+#section-1 .social-media {
+  gap: 2rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+#section-1 .social-media svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  
+  fill: var(--orange);
+  transform: translateY(0);
+
+  transition: transform 0.2s ease-out, fill 0.2s ease-out;
+}
+
+#section-1 .social-media svg:hover {
+  transform: translateY(-0.5rem);
+  fill: var(--purple);
+}

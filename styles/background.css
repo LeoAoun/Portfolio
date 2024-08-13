@@ -1,0 +1,76 @@
+@keyframes animateCloud1 {
+  0% {
+    margin-left: -100%;
+  }
+
+  100% {
+    margin-left: 100%;
+  }
+}
+
+@keyframes animateCloud2 {
+  0% {
+    margin-left: -80%;
+  }
+
+  100% {
+    margin-left: 100%;
+  }
+}
+
+@keyframes animateCloud3 {
+  0% {
+    margin-left: -60%;
+  }
+
+  100% {
+    margin-left: 100%;
+  }
+}
+
+#background {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -100;
+}
+
+.cloud > img {
+  opacity: 0.1;
+}
+
+.c1 {
+  animation: animateCloud1 14s linear infinite;
+  transform: scale(0.7);
+}
+
+.c2 {
+  animation: animateCloud2 11s linear infinite;
+  transform: scale(0.4);
+}
+
+.c3 {
+  animation: animateCloud3 20s linear infinite;
+  transform: scale(0.5);
+}
+
+.c4 {
+  animation: animateCloud1 8s linear infinite;
+  transform: scale(0.4);
+}
+
+.c5 {
+  animation: animateCloud2 16s linear infinite;
+  transform: scale(0.6);
+}
+
+.c6 {
+  animation: animateCloud3 12s linear infinite;
+  transform: scale(0.6);
+}
+
+.c7 {
+  animation: animateCloud1 9s linear infinite;
+  transform: scale(0.7);
+}
