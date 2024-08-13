@@ -6,12 +6,12 @@ Bem-vindo ao meu portfólio! Aqui você encontrará projetos, habilidades e um p
 
 Confira o meu portfólio completo no seguinte link:
 
-- **🔗 [Meu Portfólio](https://leoaoun.github.io/Portfolio/)**
+- **🔗 <a href="https://leoaoun.github.io/Portfolio/" target="_blank">Meu Portfólio</a>**
 
 ## 📞 Contato
 
 Você pode me encontrar em:
 
-- **Email:** [leonardoaoundev@gmail.com](mailto:leonardoaoundev@gmail.com) 📧
-- **LinkedIn:** [https://linkedin.com/in/leonardo-aoun](https://linkedin.com/in/leonardo-aoun) 💼
-- **GitHub:** [https://github.com/LeoAoun](https://github.com/LeoAoun) 🐙
+- **Email:** <a href="mailto:leonardoaoundev@gmail.com">leonardoaoundev@gmail.com</a> 📧
+- **LinkedIn:** <a href="https://linkedin.com/in/leonardo-aoun" target="_blank">https://linkedin.com/in/leonardo-aoun</a> 💼
+- **GitHub:** <a href="https://github.com/LeoAoun" target="_blank">https://github.com/LeoAoun</a> 🐙
