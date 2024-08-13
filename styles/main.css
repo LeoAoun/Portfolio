@@ -1,4 +1,5 @@
 @import url(configs/reset.css);
+@import url(configs/fonts.css);
 @import url(configs/variables.css);
 @import url(scrollbar.css);
 @import url(loading.css);
@@ -81,7 +82,7 @@ body {
     margin-top: 3rem;
   }
 
-  #section-4 .prodam {
+  /*   #section-4 .prodam {
     flex-direction: column;
   }
 
@@ -94,7 +95,7 @@ body {
     width: 90%;
     padding-right: 0;
     margin-top: 4rem;
-  }
+  } */
 
   #section-5 .container {
     background-color: var(--darkBackground);
@@ -147,6 +148,15 @@ body {
 
   #section-1 .container-2 {
     display: none;
+  }
+
+  #section-4 .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #section-4 .container .experiences {
+    width: 100%;
   }
 
   #section-6 .container {
@@ -295,6 +305,14 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  #section-4 .container .card {
+    max-height: 23rem;
+  }
+
+  #section-4 .container .card #card-description {
+    font-size: 1.1rem;
+  }
+
   #section-5 .carousel {
     width: 22.4rem;
   }
@@ -348,7 +366,7 @@ body {
     font-size: 1rem;
   }
 
-  #section-4 .prodam-img {
+  /*   #section-4 .prodam-img {
     height: 3.5rem;
   }
 
@@ -356,6 +374,10 @@ body {
     font-size: 1rem;
     margin-top: 2rem;
     width: 75%;
+  } */
+
+  #section-4 .container .card {
+    max-height: 27rem;
   }
 
   #section-5 .container {
@@ -446,10 +468,27 @@ body {
     width: 20rem;
   }
 
-  #section-4 .prodam > span {
+  /*   #section-4 .prodam > span {
     font-size: 0.8rem;
     margin-top: 2rem;
     width: 90%;
+  } */
+
+  #section-4 .container .card {
+    max-height: 27rem;
+  }
+
+  #section-4 .container .card .card-title-date #card-title {
+    font-size: 1.4rem;
+  }
+
+  #section-4 .container .card .card-title-date .card-date-time {
+    font-size: 1.1rem;
+  }
+
+  #section-4 .container .card #card-description {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   #section-5 {
@@ -539,6 +578,23 @@ body {
     height: 7rem;
   }
 
+  #section-4 .container .card {
+    max-height: 30rem;
+  }
+
+  #section-4 .container .card .card-title-date #card-title {
+    font-size: 1.2rem;
+  }
+
+  #section-4 .container .card .card-title-date .card-date-time {
+    font-size: 1.1rem;
+  }
+
+  #section-4 .container .card #card-business {
+    font-size: 1.1rem;
+  }
+  
+
   #section-5 .container {
     gap: 0.2rem;
   }
@@ -578,5 +634,38 @@ body {
   #section-1 {
     justify-content: center;
     margin-left: 20px;
+  }
+
+  #section-1 .subtitle {
+    font-size: 1.4rem;
+  }
+
+  #section-3 .container ul {
+    gap: 0;
+  }
+
+  #section-3 .tech {
+    width: 8rem;
+    height: 7rem;
+  }
+
+  #section-4 .container .card {
+    max-height: 35rem;
+  }
+
+  #section-4 .container .card .card-title-date #card-title {
+    font-size: 1.1rem;
+  }
+
+  #section-4 .container .card .card-title-date .card-date-time {
+    font-size: 1rem;
+  }
+
+  #section-4 .container .card #card-business {
+    font-size: 1rem;
+  }
+  
+  #section-4 .container .card #card-description {
+    font-size: 0.9rem;
   }
 }

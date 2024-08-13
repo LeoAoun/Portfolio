@@ -4,13 +4,11 @@
 }
 
 #section-4 {
-  background-color: #ffffff;
-
-  width: 90%;
-  padding-bottom: 5rem;
+  background-color: var(--grey);
+  width: 100%;
+  padding: 2rem 0 5rem;
   gap: 4rem;
   margin: 0 auto 15rem auto;
-  border-radius: 20px;
 
   display: flex;
   align-items: center;
@@ -34,7 +32,7 @@
 #section-4 .title {
   user-select: none;
   cursor: pointer;
-  color: var(--background);
+  color: #fff;
   text-align: center;
   font-size: 3rem;
   margin-top: 1rem;
@@ -44,7 +42,7 @@
   user-select: none;
   font-family: "Ubuntu", sans-serif;
   text-align: center;
-  color: #2563eb;
+  color: var(--lightPurple);
   font-weight: 500;
   font-size: 1.2rem;
   position: relative;
@@ -54,7 +52,7 @@
 #section-4 .subtitle::before {
   content: "";
   display: block;
-  background-color: #000000;
+  background-color: #fff;
 
   width: 2rem;
   height: 3px;
@@ -69,7 +67,7 @@
 #section-4 .subtitle::after {
   content: "";
   display: block;
-  background-color: #000000;
+  background-color: #fff;
 
   width: 2rem;
   height: 3px;
@@ -88,7 +86,7 @@
   animation: lineSubtitleIn 0.3s ease forwards;
 }
 
-#section-4 .prodam {
+/* #section-4 .prodam {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -111,4 +109,103 @@
   width: 60%;
   padding-right: 2.5rem;
   margin-left: 5rem;
+} */
+
+#section-4 .container {
+  font-family: Archivo, sans-serif;
+  background-color: var(--grey);
+  max-width: 70rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#section-4 .container .experiences {
+  background-color: var(--darkGrey);
+  width: 20rem;
+  height: auto;
+  gap: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#section-4 .container .experiences > div {
+  background-color: var(--darkGrey);
+  width: 100%;
+  height: 4rem;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+#section-4 .container .experiences > div span {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#section-4 .container .experiences .prodam {
+  color: var(--purple);
+  border-left: 6px solid var(--purple);
+  padding-left: calc(3rem - 6px);
+  transition: border-left 0.2s ease;
+}
+
+#section-4 .container .experiences .prodam span {
+  color: var(--purple);
+}
+
+#section-4 .container .card {
+  width: 100%;
+  max-height: 20rem;
+  padding: 1.3rem 2rem 2rem;
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey);
+}
+
+#section-4 .container .card .card-title-date {
+  width: 100%;
+  gap: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#section-4 .container .card .card-title-date #card-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: start;
+}
+
+#section-4 .container .card .card-title-date .card-date-time {
+  color: var(--lightGrey);
+  font-size: 1.2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#section-4 .container .card .card-title-date .card-date-time #date {
+  white-space: nowrap;
+}
+
+#section-4 .container .card #card-business {
+  color: var(--purple);
+  font-size: 1.2rem;
+}
+
+#section-4 .container .card #card-description {
+  color: var(--lightGrey);
+  font-size: 1.15rem;
+  line-height: 1.8rem;
+  text-align: justify;
 }

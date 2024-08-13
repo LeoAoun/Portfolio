@@ -4,14 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
     <title>Portfolio</title>
@@ -86,10 +78,10 @@
 
         <span class="summary">
           Sou um jovem de 20 anos dedicado e apaixonado pela tecnologia. Além
-          das matérias obrigatórias da graduação, estudo desenvolvimento Web
-          Full Stack e Engenharia de Software por conta própria. Atualmente,
-          estou em busca de oportunidades de estágio para aplicar e aprimorar
-          minhas habilidades.
+          das matérias obrigatórias da graduação em Sistemas de Informação pela
+          USP, estudo desenvolvimento Web Full Stack e Engenharia de Software
+          por conta própria. Atualmente, estou em busca de oportunidades de
+          estágio para aplicar e aprimorar minhas habilidades.
         </span>
 
         <div class="social-media">
@@ -141,22 +133,17 @@
       <div class="about">
         <img class="me" src="./images/about/me.jpeg" />
         <span class="description">
-          "Este é o meu espaço de trabalho, onde compartilho um pouco da minha
-          jornada e paixão pelo mundo da tecnologia. Atualmente, estou imerso na
-          Graduação em Sistemas de Informação pela maior universidade da América
-          Latina, a Universidade de São Paulo (USP), cursando meu sexto período.
-          Minha aventura na programação começou de maneira despretensiosa,
-          sempre fui fascinado pelo universo da tecnologia e nutria uma
-          curiosidade genuína sobre como aplicativos e sites eram construídos,
-          as ferramentas utilizadas, as animações e todos os detalhes que os
-          envolviam. À medida que mergulhava mais fundo nesse mundo, descobri as
-          múltiplas vertentes que a área de programação oferece. Entretanto,
-          recentemente, tenho direcionado meus estudos para a Engenharia de
-          Software e o Desenvolvimento Web Full Stack. Além das aulas da
-          graduação, busco de conhecimento por conta própria. Tenho investido em
-          cursos para expandir e aprimorar minhas habilidades na área de
-          Tecnologia, além de aproveitar-me de materiais gratuitos, participo de
-          eventos e dedico-me a bootcamps para elevar meu nível de expertise."
+          "Este é o meu espaço de trabalho, onde compartilho minha jornada e
+          paixão pela tecnologia. Atualmente, estou cursando o sexto período da
+          Graduação em Sistemas de Informação na Universidade de São Paulo
+          (USP), a maior universidade da América Latina. Minha aventura na
+          programação começou com uma curiosidade genuína sobre como aplicativos
+          e sites eram construídos. À medida que me aprofundava, descobri as
+          diversas vertentes da programação. Recentemente, tenho focado meus
+          estudos em Engenharia de Software e Desenvolvimento Web Full Stack.
+          Além das aulas, busco constantemente expandir minhas habilidades por
+          meio de cursos, materiais gratuitos, eventos e bootcamps, sempre em
+          busca de elevar meu nível de expertise."
         </span>
       </div>
       <div class="cv-div"><button id="button-modal-cv">Currículo</button></div>
@@ -189,7 +176,40 @@
         <span class="title" onclick="scrollToMenu()"> Experiência </span>
         <span class="subtitle">Onde trabalhei</span>
       </div>
-      <div class="prodam">
+
+      <div class="container">
+        <div class="experiences">
+          <div class="prodam">
+            <span>Prodam</span>
+          </div>
+          <div class="">
+            <span>Em breve...</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title-date">
+            <span id="card-title">Estagiário em C++</span>
+            <div class="card-date-time">
+              <span id="date">03/2023 - 03/2025</span>
+              &nbsp;
+              <span id="time">(2 anos)</span>
+            </div>
+          </div>
+          <span id="card-business">PRODAMSP</span>
+          <span id="card-description"
+            >Trabalho como estagiário no núcleo GDO-2 da Empresa de Tecnologia
+            da Informação e Comunicação do Município de São Paulo, PRODAM/SP,
+            vinculado ao Sistema Integrado de Gestão de Pessoas e Competências
+            (SIGPEC) responsável pelo desenvolvimento e suporte do sistema de
+            gestão de pessoas da prefeitura de São Paulo. Atuo na manutenção do
+            SIGPEC e utilizo a linguagem de programação C++ com conhecimentos
+            básicos em SQL para corrigir bugs, auxiliar em testes e análises da
+            folha de pagamentos dos funcionários públicos.
+          </span>
+        </div>
+      </div>
+      <!--       <div class="prodam">
         <img class="prodam-img" src="./images/experience/prodam-logo.png" />
         <span>
           Trabalho como estagiário no núcleo GDO-2 da Empresa de Tecnologia da
@@ -201,7 +221,7 @@
           básicos em SQL para corrigir bugs, auxiliar em testes e análises da
           folha de pagamentos dos funcionários públicos.
         </span>
-      </div>
+      </div> -->
     </section>
 
     <section id="section-5" class="disable">
