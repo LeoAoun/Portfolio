@@ -33,20 +33,20 @@
   user-select: none;
   cursor: pointer;
   color: #fff;
-  text-align: center;
   font-size: 3rem;
   margin-top: 1rem;
+  text-align: center;
 }
 
 #section-4 .subtitle {
   user-select: none;
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
+  font-family: "Archivo", sans-serif;
   color: var(--lightPurple);
   font-weight: 500;
   font-size: 1.2rem;
+  
   position: relative;
-  display: inline;
+  text-align: center;
 }
 
 #section-4 .subtitle::before {
@@ -87,9 +87,11 @@
 }
 
 #section-4 .container {
-  font-family: Archivo, sans-serif;
+  font-family: "Archivo", sans-serif;
   background-color: var(--grey);
+  
   max-width: 70rem;
+  
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -98,6 +100,7 @@
 
 #section-4 .container .experiences {
   background-color: var(--darkGrey);
+ 
   width: 20rem;
   height: auto;
   gap: 0.5rem;
@@ -109,9 +112,11 @@
 
 #section-4 .container .experiences > div {
   background-color: var(--darkGrey);
+ 
   width: 100%;
   height: 4rem;
   padding-left: 3rem;
+ 
   display: flex;
   align-items: center;
 }
@@ -125,8 +130,10 @@
 #section-4 .container .experiences .prodam {
   cursor: pointer;
   color: var(--purple);
+  
   border-left: 6px solid var(--purple);
   padding-left: calc(3rem - 6px);
+  
   transition: border-left 0.2s ease;
 }
 
@@ -135,13 +142,15 @@
 }
 
 #section-4 .container .card {
+  background-color: var(--grey);
+ 
   width: 100%;
   max-height: 20rem;
   padding: 1.3rem 2rem 2rem;
   gap: 1.5rem;
+ 
   display: flex;
   flex-direction: column;
-  background-color: var(--grey);
 }
 
 #section-4 .container .card .card-title-date {

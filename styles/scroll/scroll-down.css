@@ -28,8 +28,9 @@
 
 #scroll-down {
   user-select: none;
-  display: none;
   background-color: transparent;
+  display: none;
+  
   width: 5rem;
   height: 5rem;
   border: none;

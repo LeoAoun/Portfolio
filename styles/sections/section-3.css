@@ -20,6 +20,7 @@
 
 #section-3 .container{
   width: 100%;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,16 +37,17 @@
   user-select: none;
   cursor: pointer;
   color: #fff;
-  text-align: center;
   font-size: 3.5rem;
+  text-align: center;
 }
 
 #section-3 .subtitle {
   user-select: none;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Archivo", sans-serif;
   color: var(--lightPurple);
   font-weight: 500;
   font-size: 1.2rem;
+
   position: relative;
 }
 
@@ -87,20 +89,23 @@
 }
 
 #particles-js {
-  position: absolute;
   width: 110%;
   height: 110%;
+  
+  position: absolute;
+
   transform: translateY(-5%);
 }
 
 #section-3 .container ul {
-  position: relative;
   list-style: none;
   pointer-events: none;
   
   width: 100%;
   gap: 2rem;
   margin-top: 5rem;
+  
+  position: relative;
   
   display: grid;
   justify-items: center;

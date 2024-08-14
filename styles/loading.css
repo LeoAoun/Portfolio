@@ -32,8 +32,10 @@
 
 .loading img {
   user-select: none;
+  
   width: 9rem;
   height: 6rem;
+
   position: relative;
 }
 
@@ -57,11 +59,12 @@
   );
   display: block;
 
+  width: 20rem;
+  height: 6.3rem;
+
   position: absolute;
   top: 0;
   left: 0;
-  width: 20rem;
-  height: 6.3rem;
 
   animation: loadFadeIn 5s ease forwards;
 }

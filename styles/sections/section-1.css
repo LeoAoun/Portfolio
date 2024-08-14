@@ -72,6 +72,7 @@
   color: var(--lightPurple);
   font-weight: 600;
   font-size: 2.3rem;
+ 
   margin-left: 4rem;
 
   transform: translateX(1.5rem);
@@ -83,11 +84,12 @@
 }
 
 #section-1 .summary {
-  font-family: "Mulish", sans-serif;
+  font-family: "Archivo", sans-serif;
   color: rgb(212, 212, 212);
   text-align: justify;
   font-size: 1.3rem;
   font-weight: 400;
+  
   width: 500px;
   margin-top: 2rem;
 }
@@ -95,6 +97,7 @@
 #section-1 .social-media {
   gap: 2rem;
   margin-top: 5rem;
+  
   display: flex;
   flex-direction: row;
   align-items: center;

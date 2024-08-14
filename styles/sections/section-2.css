@@ -33,21 +33,22 @@
 #section-2 .title {
   user-select: none;
   cursor: pointer;
-  text-align: center;
   color: var(--background);
   font-size: 3rem;
   margin-top: 1rem;
+  text-align: center;
 }
 
 #section-2 .subtitle {
   user-select: none;
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-  color: #2563eb;
+  font-family: "Archivo", sans-serif;
+  color: var(--darkBlue);
   font-weight: 500;
   font-size: 1.2rem;
+
   position: relative;
-  display: inline;
+
+  text-align: center;
 }
 
 #section-2 .subtitle::before {
@@ -174,12 +175,12 @@
   font-size: 16px;
   font-weight: 600;
   display: none;
-  
+
   width: 160px;
   padding: 10px;
   border-radius: 10px;
   z-index: 1;
-  
+
   position: absolute;
   top: 0;
   left: -20rem;
@@ -200,11 +201,11 @@
   font-size: 16px;
   font-weight: 600;
   display: none;
-  
+
   width: 160px;
   padding: 10px;
   border-radius: 10px;
   z-index: 1;
-  
+
   position: absolute;
 }
