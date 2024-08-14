@@ -86,31 +86,6 @@
   animation: lineSubtitleIn 0.3s ease forwards;
 }
 
-/* #section-4 .prodam {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-#section-4 .prodam-img {
-  width: auto;
-  align-self: center;
-  margin-left: 2rem;
-  height: 80px;
-}
-
-#section-4 .prodam span {
-  font-family: "Mulish", sans-serif;
-  align-self: center;
-  word-break: keep-all;
-  text-align: justify;
-
-  font-size: 1.3rem;
-  width: 60%;
-  padding-right: 2.5rem;
-  margin-left: 5rem;
-} */
-
 #section-4 .container {
   font-family: Archivo, sans-serif;
   background-color: var(--grey);

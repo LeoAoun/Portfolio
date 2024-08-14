@@ -52,13 +52,13 @@ body {
   }
 }
 
-@media (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
   .background-cv > a > img {
     width: 500px;
   }
 }
 
-@media (max-width: 1150px) {
+@media screen and (max-width: 1150px) {
   #section-1 .container-2 > img {
     width: 25rem;
   }
@@ -81,21 +81,6 @@ body {
     margin-left: 0;
     margin-top: 3rem;
   }
-
-  /*   #section-4 .prodam {
-    flex-direction: column;
-  }
-
-  #section-4 .prodam-img {
-    margin-left: 0rem;
-  }
-
-  #section-4 .prodam > span {
-    margin-left: 0;
-    width: 90%;
-    padding-right: 0;
-    margin-top: 4rem;
-  } */
 
   #section-5 .container {
     background-color: var(--darkBackground);
@@ -182,6 +167,10 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  #menu > li > button {
+    font-size: 1.3rem;
+  }
+
   #section-3 > div > ul {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -222,7 +211,7 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
   #scroll-to-top {
     width: 3rem;
     height: 3rem;
@@ -295,12 +284,32 @@ body {
 }
 
 @media screen and (max-height: 860px) {
+  #section-1 {
+    margin-top: 15rem;
+  }
+
+  #section-1,
+  #section-2,
+  #section-3,
+  #section-4,
+  #section-5 {
+    margin-bottom: 10rem;
+  }
+
   #modal-cv > a > img {
     width: 30rem;
   }
+
+  #section-4 .container .card {
+    max-height: 18rem;
+  }
+
+  #section-4 .container .card #card-description {
+    font-size: 1rem;
+  }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   #section-3 .container ul {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -323,7 +332,7 @@ body {
   }
 }
 
-@media (max-width: 530px) {
+@media screen and (max-width: 530px) {
   #scroll-to-top {
     width: 3rem;
     height: 3rem;
@@ -365,16 +374,6 @@ body {
   #section-3 .typewriter {
     font-size: 1rem;
   }
-
-  /*   #section-4 .prodam-img {
-    height: 3.5rem;
-  }
-
-  #section-4 .prodam > span {
-    font-size: 1rem;
-    margin-top: 2rem;
-    width: 75%;
-  } */
 
   #section-4 .container .card {
     max-height: 27rem;
@@ -422,12 +421,16 @@ body {
 }
 
 @media screen and (max-height: 720px) {
+  #section-1 {
+    margin-top: 12rem;
+  }
+
   #modal-cv > a > img {
     width: 25rem;
   }
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
   #section-1,
   #section-2,
   #section-3,
@@ -467,12 +470,6 @@ body {
   #modal-cv > a > img {
     width: 20rem;
   }
-
-  /*   #section-4 .prodam > span {
-    font-size: 0.8rem;
-    margin-top: 2rem;
-    width: 90%;
-  } */
 
   #section-4 .container .card {
     max-height: 27rem;
@@ -540,7 +537,7 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
   #section-1 .title,
   #section-2 .title,
   #section-3 .title,
@@ -593,7 +590,6 @@ body {
   #section-4 .container .card #card-business {
     font-size: 1.1rem;
   }
-  
 
   #section-5 .container {
     gap: 0.2rem;
@@ -621,7 +617,7 @@ body {
   }
 }
 
-@media (max-width: 340px) {
+@media screen and (max-width: 340px) {
   #section-1 .title,
   #section-2 .title,
   #section-3 .title,
@@ -664,7 +660,7 @@ body {
   #section-4 .container .card #card-business {
     font-size: 1rem;
   }
-  
+
   #section-4 .container .card #card-description {
     font-size: 0.9rem;
   }
