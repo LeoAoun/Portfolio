@@ -4,6 +4,7 @@
 }
 
 #section-5 {
+  user-select: none;
   background-color: transparent;
   background-color: var(--darkBackground);
 

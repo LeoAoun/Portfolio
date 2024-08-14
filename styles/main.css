@@ -229,7 +229,6 @@ body {
 
   #section-1 {
     justify-content: center;
-    margin-top: 10rem;
     margin-left: 2rem;
   }
 
@@ -420,6 +419,14 @@ body {
   }
 }
 
+
+@media screen and (max-height: 900px) {
+  #section-1{
+    margin-top: 15rem;
+  }
+}
+
+
 @media screen and (max-height: 720px) {
   #section-1 {
     margin-top: 12rem;
@@ -436,7 +443,7 @@ body {
   #section-3,
   #section-4,
   #section-5 {
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
 
   #section-1 .title,
