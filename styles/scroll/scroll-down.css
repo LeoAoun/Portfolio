@@ -1,0 +1,49 @@
+@keyframes animateScrollDown {
+  0% {
+    bottom: 0rem;
+  }
+  50% {
+    bottom: 2rem;
+  }
+  100% {
+    bottom: 0rem;
+  }
+}
+
+@keyframes animateScrollDownFadeIn {
+  from {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-loading-scroll-down {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#scroll-down {
+  user-select: none;
+  display: none;
+  background-color: transparent;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+
+  position: fixed;
+  bottom: 2rem;
+  right: 5rem;
+  z-index: 1;
+
+  animation: animateScrollDownFadeIn ease 1.5s,
+    animateScrollDown 1.5s infinite ease-in-out;
+}
+
+#scroll-down img {
+  width: 100%;
+  height: 100%;
+}

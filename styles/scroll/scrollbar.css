@@ -3,7 +3,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: var(--darkPurple);
+  background-color: var(--purple);
   border-radius: 50px;
 }
 

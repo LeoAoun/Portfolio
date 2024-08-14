@@ -1,9 +1,10 @@
 @import url(configs/reset.css);
 @import url(configs/fonts.css);
-@import url(configs/variables.css);
-@import url(scrollbar.css);
+@import url(configs/colors.css);
+@import url(scroll/scrollbar.css);
 @import url(loading.css);
-@import url(scroll-to-top.css);
+@import url(scroll/scroll-down.css);
+@import url(scroll/scroll-to-top.css);
 @import url(background.css);
 @import url(menu.css);
 @import url(sections/section-1.css);
@@ -114,6 +115,13 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  #scroll-down {
+    width: 4rem;
+    height: 4rem;
+
+    right: 3rem;
+  }
+
   #scroll-to-top {
     width: 4rem;
     height: 4rem;
@@ -212,6 +220,13 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+  #scroll-down {
+    width: 3rem;
+    height: 3rem;
+
+    right: 3rem;
+  }
+
   #scroll-to-top {
     width: 3rem;
     height: 3rem;
@@ -332,9 +347,11 @@ body {
 }
 
 @media screen and (max-width: 530px) {
+  #scroll-down {
+    right: 1rem;
+  }
+  
   #scroll-to-top {
-    width: 3rem;
-    height: 3rem;
     right: 1rem;
     bottom: 4rem;
   }
@@ -419,13 +436,11 @@ body {
   }
 }
 
-
 @media screen and (max-height: 900px) {
-  #section-1{
+  #section-1 {
     margin-top: 15rem;
   }
 }
-
 
 @media screen and (max-height: 720px) {
   #section-1 {

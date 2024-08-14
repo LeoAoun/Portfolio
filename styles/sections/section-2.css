@@ -125,6 +125,7 @@
 }
 
 #section-2 .cv-div > button {
+  user-select: none;
   font-family: "Raleway", sans-serif;
   background-color: var(--purple);
   color: white;

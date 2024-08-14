@@ -1,4 +1,5 @@
 #scroll-to-top {
+  user-select: none;
   display: none;
   cursor: pointer;
   background-color: var(--purple);
