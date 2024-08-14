@@ -47,7 +47,7 @@ function drag(event) {
   const currentX = event.type.includes("mouse")
     ? event.pageX
     : event.touches[0].clientX;
-  const deltaX = currentX - startX;
+  const deltaX = (currentX - startX) * 10;
 
   projects.forEach((project) => {
     project.style.transform = `translateX(calc(${calculateTranslateX()} + ${deltaX}px))`;

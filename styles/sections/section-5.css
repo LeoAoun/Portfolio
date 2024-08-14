@@ -151,7 +151,7 @@
   display: flex;
   align-items: center;
 
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease;
 }
 
 #section-5 .container-1 {
