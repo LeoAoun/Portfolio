@@ -8,7 +8,7 @@
 
   width: 90%;
   padding-bottom: 5rem;
-  border-radius: 20px;
+  border-radius: 1rem;
   margin: 0 auto 15rem auto;
 
   display: flex;
@@ -96,7 +96,7 @@
   transform: translateY(-5%);
 }
 
-#section-3 .container ul {
+#section-3 .container #techs-list {
   list-style: none;
   pointer-events: none;
   
@@ -116,8 +116,8 @@
   user-select: none;
   background-color: #0d161d;
 
-  width: 200px;
-  height: 120px;
+  width: 12.5rem;
+  height: 7.5rem;
   border: 1px solid #808080;
 
   display: flex;
@@ -158,7 +158,7 @@
     max-width: 0;
   }
   to {
-    max-width: 100px;
+    max-width: 6rem;
   }
 }
 

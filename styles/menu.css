@@ -135,24 +135,24 @@ nav > button {
   @keyframes menuButton1In {
     0% {
       background-color: rgb(185, 105, 250);
-      width: 20px;
+      width: 1.2rem;
       transform: rotate(0deg) translate(0px, 0px);
     }
 
     100% {
-      width: 25px;
+      width: 1.5rem;
       transform: rotate(-45deg) translate(-5px, 5px);
     }
   }
 
   @keyframes menuButton1Out {
     100% {
-      width: 20px;
+      width: 1.2rem;
       transform: rotate(0deg) translate(0px, 0px);
     }
 
     0% {
-      width: 25px;
+      width: 1.5rem;
       transform: rotate(-45deg) translate(-5px, 5px);
     }
   }
@@ -161,7 +161,7 @@ nav > button {
     background-color: rgb(185, 105, 250);
     border: none;
    
-    width: 20px;
+    width: 1.2rem;
     height: 3px;
   }
 
@@ -197,7 +197,7 @@ nav > button {
     background-color: rgb(185, 105, 250);
     border: none;
     
-    width: 20px;
+    width: 1.2rem;
     height: 3px;
     margin-top: 5px;
   }
@@ -211,26 +211,26 @@ nav > button {
   }
 
   @keyframes menuButton3In {
-    0% {
-      width: 20px;
+    from {
+      width: 1.2rem;
       transform: rotate(0deg) translate(0px, 0px);
     }
 
-    100% {
-      width: 25px;
-      transform: rotate(45deg) translate(-7px, -6px);
+    to {
+      width: 1.5rem;
+      transform: rotate(45deg) translate(-6.5px, -6.5px);
     }
   }
 
   @keyframes menuButton3Out {
-    100% {
-      width: 20px;
-      transform: rotate(0deg) translate(0px, 0px);
+    from {
+      width: 1.5rem;
+      transform: rotate(45deg) translate(-6.5px, -6.5px);
     }
-
-    0% {
-      width: 25px;
-      transform: rotate(45deg) translate(-7px, -6px);
+    
+    to {
+      width: 1.2rem;
+      transform: rotate(0deg) translate(0px, 0px);
     }
   }
 
@@ -238,7 +238,7 @@ nav > button {
     background-color: rgb(185, 105, 250);
     border: none;
     
-    width: 20px;
+    width: 1.2rem;
     height: 3px;
     margin-top: 5px;
   }

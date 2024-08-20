@@ -18,12 +18,12 @@
 body {
   cursor: default;
   background-color: var(--background);
-  
+
   min-height: 100vh;
-  
+
   display: flex;
   flex-direction: column;
-  
+
   overflow-x: hidden;
 }
 
@@ -68,7 +68,7 @@ body {
 
 @media screen and (max-width: 1300px) {
   .background-cv > a > img {
-    width: 500px;
+    width: 31rem;
   }
 }
 
@@ -122,7 +122,7 @@ body {
   #section-5 .container-1 {
     width: 70%;
     height: 100%;
-    
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -195,8 +195,13 @@ body {
     font-size: 1.3rem;
   }
 
-  #section-3 > div > ul {
-    grid-template-columns: repeat(2, 1fr);
+  #section-3 {
+    width: 100%;
+  }
+
+  #section-3 .tech {
+    width: 12rem;
+    height: 8rem;
   }
 
   #section-5 {
@@ -222,14 +227,14 @@ body {
     max-width: 30rem;
     padding: 0rem;
     padding-bottom: 2rem;
-    
+
     flex-direction: column;
   }
 
   #section-5 .container-1 {
     width: 70%;
     height: 100%;
-    
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -257,7 +262,7 @@ body {
   }
 
   .welcome {
-    margin-top: 100px;
+    margin-top: 6rem;
   }
 
   #section-1 {
@@ -279,20 +284,20 @@ body {
     width: 30rem;
   }
 
-  #section-3 > div > ul {
+  #section-3 .container #techs-list {
     gap: 1rem;
   }
 
-  #section-3 .tech {
-    width: 160px;
-    height: 110px;
+  #section-3 .container #techs-list .tech {
+    width: 10rem;
+    height: 7rem;
   }
 
-  #section-3 .typewriter {
+  #section-3 .container #techs-list .tech .typewriter {
     font-size: 1rem;
   }
 
-  #section-3 .tech > img {
+  #section-3 .container #techs-list .tech img {
     width: 3.8rem;
     height: 4rem;
   }
@@ -342,8 +347,13 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  #section-3 .container ul {
+  #section-3 .container #techs-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  #section-3 .container #techs-list .tech {
+    width: 12rem;
+    height: 7rem;
   }
 
   #section-4 .container .card {
@@ -368,7 +378,7 @@ body {
   #scroll-down {
     right: 1rem;
   }
-  
+
   #scroll-to-top {
     right: 1rem;
     bottom: 4rem;
@@ -392,21 +402,21 @@ body {
   }
   #section-1 .container-1 .summary {
     font-size: 1rem;
-    width: 400px;
+    width: 25rem;
   }
 
   #modal-cv > a > img {
     width: 25rem;
   }
 
-  #section-3 .tech {
+  .container #techs-list .tech {
     width: 10rem;
     height: 7rem;
     scale: 0.85;
   }
 
-  #section-3 .typewriter {
-    font-size: 1rem;
+  #section-3 .container #techs-list .tech .typewriter {
+    font-size: 1.1rem;
   }
 
   #section-4 .container .card {
@@ -504,11 +514,16 @@ body {
   }
   #section-1 .container-1 .summary {
     font-size: 1rem;
-    width: 300px;
+    width: 19rem;
   }
 
   #modal-cv > a > img {
     width: 20rem;
+  }
+
+  #section-3 .container #techs-list .tech {
+    width: 11rem;
+    height: 7rem;
   }
 
   #section-4 .container .card {
@@ -556,7 +571,7 @@ body {
 
     height: 3.5rem;
     padding: 0 1rem;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 
     position: absolute;
     top: -150%;
@@ -604,15 +619,15 @@ body {
 
   #section-1 .container-1 .summary {
     font-size: 1rem;
-    width: 280px;
+    width: 17.5rem;
   }
 
   #modal-cv > a > img {
     width: 15rem;
   }
 
-  #section-3 .tech {
-    width: 9rem;
+  #section-3 .container #techs-list .tech {
+    width: 10rem;
     height: 7rem;
   }
 
@@ -670,19 +685,19 @@ body {
 
   #section-1 {
     justify-content: center;
-    margin-left: 20px;
+    margin-left: 1.2rem;
   }
 
   #section-1 .subtitle {
     font-size: 1.4rem;
   }
 
-  #section-3 .container ul {
+  #section-3 .container #techs-list {
     gap: 0;
   }
 
-  #section-3 .tech {
-    width: 8rem;
+  #section-3 .container #techs-list .tech {
+    width: 9rem;
     height: 7rem;
   }
 

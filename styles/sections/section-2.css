@@ -7,8 +7,8 @@
   background-color: #ffffff;
 
   width: 90%;
-  padding-bottom: 50px;
-  border-radius: 20px;
+  padding-bottom: 3rem;
+  border-radius: 1rem;
   margin: 0 auto 15rem auto;
 
   display: flex;
@@ -89,9 +89,9 @@
 
 #section-2 .about {
   width: 90%;
-  padding-bottom: 50px;
+  padding-bottom: 3rem;
   margin-top: 1rem;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 1rem 1rem;
 
   display: flex;
   flex-direction: row;
@@ -103,7 +103,7 @@
   user-select: none;
   width: 16rem;
   height: 19rem;
-  border-radius: 20px;
+  border-radius: 1rem;
 }
 
 #section-2 .description {
@@ -129,15 +129,15 @@
   font-family: "Raleway", sans-serif;
   background-color: var(--purple);
   color: white;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
 
   border: none;
   box-shadow: 4px 4px 1px black;
-  padding: 13px 25px 13px 25px;
+  padding: 1rem 1.5rem 1rem 1.5rem;
   border-radius: 5px;
-  margin-top: -50px;
+  margin-top: -3rem;
 
   transition: background-color 0.2s ease-in-out, transform 0.1s ease-out;
 }
@@ -171,13 +171,13 @@
   font-family: "Raleway", sans-serif;
   background-color: red;
   color: aliceblue;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   display: none;
 
-  width: 160px;
-  padding: 10px;
-  border-radius: 10px;
+  width: 10rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   z-index: 1;
 
   position: absolute;
@@ -197,13 +197,13 @@
   font-family: "Raleway", sans-serif;
   background-color: var(--background);
   color: aliceblue;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   display: none;
 
-  width: 160px;
-  padding: 10px;
-  border-radius: 10px;
+  width: 10rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   z-index: 1;
 
   position: absolute;
