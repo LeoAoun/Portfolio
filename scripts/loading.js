@@ -44,14 +44,6 @@ setTimeout(() => {
 }, 3000);
 
 function removeDisable() {
-  const nav = document.getElementById("nav");
-  const section1 = document.getElementById("section-1");
-  const section2 = document.getElementById("section-2");
-  const section3 = document.getElementById("section-3");
-  const section4 = document.getElementById("section-4");
-  const section5 = document.getElementById("section-5");
-  const section6 = document.getElementById("section-6");
-
   nav.classList.remove("disable");
   section1.classList.remove("disable");
   section2.classList.remove("disable");
@@ -62,7 +54,6 @@ function removeDisable() {
 }
 
 function animateNavContainer1() {
-  const nav = document.getElementById("nav");
   nav.classList.add("animate-nav");
 
   const container1 = document.querySelector("#section-1 .container-1");

@@ -1,6 +1,11 @@
+const titleSubtitle = document.querySelectorAll(".title-subtitle");
+const section5Container1 = document.querySelectorAll("#section-5 .container-1");
+const section5Container2 = document.querySelectorAll("#section-5 .container-2");
+const section6Container1 = document.querySelector("#section-6 form");
+const section6Container2 = document.querySelector("#section-6 .details");
+
 // Event listener to animate the sections when the user scrolls to them
 document.addEventListener("scroll", () => {
-  const scrollDown = document.getElementById("scroll-down");
   const position2 = section2.getBoundingClientRect();
   const position3 = section3.getBoundingClientRect();
   const position4 = section4.getBoundingClientRect();

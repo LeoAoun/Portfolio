@@ -1,6 +1,4 @@
 const menuButton = document.getElementById("menu-button");
-
-const nav = document.getElementById("nav");
 const menu = document.getElementById("menu");
 
 let clicked = false;

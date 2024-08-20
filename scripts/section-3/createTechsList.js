@@ -1,7 +1,7 @@
 const techsList = document.getElementById("techs-list");
 
 const techs = [
-  { name: "ReactJS", stack: "Front-End", src: "react" },
+  { name: "React", stack: "Front-End", src: "react" },
   { name: "Angular", stack: "Front-End", src: "angular" },
   { name: "Typescript", stack: "Full Stack", src: "typescript" },
   { name: "TailwindCSS", stack: "Front-End", src: "tailwindcss" },

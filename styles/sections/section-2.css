@@ -32,7 +32,6 @@
 
 #section-2 .title {
   user-select: none;
-  cursor: pointer;
   color: var(--background);
   font-size: 3rem;
   margin-top: 1rem;
