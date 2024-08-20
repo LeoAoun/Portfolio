@@ -18,9 +18,9 @@
   transition: opacity 1s ease, transform 1s ease;
 }
 
-#section-3 .container{
+#section-3 .container {
   width: 100%;
- 
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,49 +48,47 @@
   font-size: 1.2rem;
 
   position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: #fff;
+
+    width: 2rem;
+    height: 3px;
+
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 5px);
+
+    animation: lineSubtitleOut 0.3s ease forwards;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: #fff;
+
+    width: 2rem;
+    height: 3px;
+
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 5px);
+
+    animation: lineSubtitleOut 0.3s ease forwards;
+  }
 }
 
-#section-3 .subtitle::before {
-  content: "";
-  display: block;
-  background-color: #fff;
-
-  width: 2rem;
-  height: 3px;
-
-  position: absolute;
-  top: 50%;
-  right: calc(100% + 5px);
-
-  animation: lineSubtitleOut 0.3s ease forwards;
-}
-
-#section-3 .subtitle::after {
-  content: "";
-  display: block;
-  background-color: #fff;
-
-  width: 2rem;
-  height: 3px;
-
-  position: absolute;
-  top: 50%;
-  left: calc(100% + 5px);
-
-  animation: lineSubtitleOut 0.3s ease forwards;
-}
-
-#section-3 .title:hover + .subtitle::before,
-#section-3 .title:hover + .subtitle::after,
-#section-3 .subtitle:hover::before,
-#section-3 .subtitle:hover::after {
+#section-3 .title-subtitle:hover .subtitle::before,
+#section-3 .title-subtitle:hover .subtitle::after {
   animation: lineSubtitleIn 0.3s ease forwards;
 }
 
 #particles-js {
   width: 110%;
   height: 110%;
-  
+
   position: absolute;
 
   transform: translateY(-5%);
@@ -99,13 +97,13 @@
 #section-3 .container #techs-list {
   list-style: none;
   pointer-events: none;
-  
+
   width: 100%;
   gap: 2rem;
   margin-top: 5rem;
-  
+
   position: relative;
-  
+
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
@@ -130,12 +128,19 @@
 
   transform: scale(1);
   transition: transform 0.2s ease;
-}
 
-#section-3 .tech:hover,
-#section-3 .tech:focus-visible {
-  border: 1px solid var(--purple);
-  transform: scale(1.1);
+  &:is(:hover, :focus-visible) {
+    border: 1px solid var(--purple);
+    transform: scale(1.1);
+  }
+
+  &:is(:hover, :focus-visible) .typewriter {
+    border-right: 2px solid #fff;
+    display: block;
+    overflow: hidden;
+    animation: TypingTech 0.5s steps(9),
+      CursorTech 0.5s step-end infinite alternate;
+  }
 }
 
 #section-3 .typewriter {
@@ -160,14 +165,6 @@
   to {
     max-width: 6rem;
   }
-}
-
-#section-3 .tech:hover .typewriter,
-#section-3 .tech:focus-visible .typewriter {
-  border-right: 2px solid #fff;
-  display: block;
-  overflow: hidden;
-  animation: TypingTech 0.5s steps(9), CursorTech 0.5s step-end infinite alternate;
 }
 
 #section-3 .tech > img {

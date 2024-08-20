@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     scrollDown.style.display = "block";
-  }, 4500);
+  }, 4000);
 });

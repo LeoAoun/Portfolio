@@ -43,51 +43,49 @@
   font-weight: 500;
   font-size: 1.2rem;
   position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: #fff;
+
+    width: 2rem;
+    height: 3px;
+
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 5px);
+
+    animation: lineSubtitleOut 0.3s ease forwards;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: #fff;
+
+    width: 2rem;
+    height: 3px;
+
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 5px);
+
+    animation: lineSubtitleOut 0.3s ease forwards;
+  }
 }
 
-#section-6 .subtitle::before {
-  content: "";
-  display: block;
-  background-color: #fff;
-
-  width: 2rem;
-  height: 3px;
-
-  position: absolute;
-  top: 50%;
-  right: calc(100% + 5px);
-
-  animation: lineSubtitleOut 0.3s ease forwards;
-}
-
-#section-6 .subtitle::after {
-  content: "";
-  display: block;
-  background-color: #fff;
-
-  width: 2rem;
-  height: 3px;
-
-  position: absolute;
-  top: 50%;
-  left: calc(100% + 5px);
-
-  animation: lineSubtitleOut 0.3s ease forwards;
-}
-
-#section-6 .title:hover + .subtitle::before,
-#section-6 .title:hover + .subtitle::after,
-#section-6 .subtitle:hover::before,
-#section-6 .subtitle:hover::after {
+#section-6 .title-subtitle:hover .subtitle::before,
+#section-6 .title-subtitle:hover .subtitle::after {
   animation: lineSubtitleIn 0.3s ease forwards;
 }
 
 #section-6 .container {
   font-family: "Ubuntu", sans-serif;
- 
+
   width: 90%;
   gap: 2rem;
-  
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -96,11 +94,11 @@
 
 #section-6 .container form {
   background-color: #fff;
-  
+
   width: 90%;
   height: 42rem;
   gap: 1rem;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -205,6 +203,14 @@
   opacity: 0;
   transform: translateY(10rem);
   transition: opacity 2s ease, transform 1.5s ease;
+
+  &:hover .background-contact-info::before {
+    animation: pulse 2s ease-out infinite;
+  }
+
+  &:hover .background-contact-info::after {
+    animation: pulse 2s 1s ease-out infinite;
+  }
 }
 
 #section-6 .container .details .background-contact-info {
@@ -223,7 +229,7 @@
   display: block;
 
   height: 20rem;
-  width: 25rem;
+  width: 100%;
   border-radius: 0.5rem;
 
   opacity: 0.4;
@@ -236,14 +242,6 @@
   100% {
     transform: scale(1.1);
   }
-}
-
-#section-6 .container .details:hover .background-contact-info::before {
-  animation: pulse 2s ease-out infinite;
-}
-
-#section-6 .container .details:hover .background-contact-info::after {
-  animation: pulse 2s 1s ease-out infinite;
 }
 
 #section-6 .container .details .contact-info {

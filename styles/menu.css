@@ -55,32 +55,32 @@ nav > button {
 
   border: none;
   font-size: 1.4rem;
-  
+
   transition: color 0.3s ease-out;
-}
 
-#menu > li > button:focus-visible {
-  outline: 1px solid #94a3b8;
-}
+  &:focus-visible {
+    outline: 1px solid var(--lightGrey);
+  }
 
-#menu > li > button:hover {
-  color: var(--darkBlue);
-}
+  &:hover {
+    color: var(--darkBlue);
+  }
 
-#menu > li > button::after {
-  content: "";
-  background-color: var(--orange);
-  display: block;
+  &::after {
+    content: "";
+    background-color: var(--orange);
+    display: block;
 
-  width: 100%;
-  height: 4px;
-  margin-top: 5px;
+    width: 100%;
+    height: 4px;
+    margin-top: 5px;
 
-  transition: width 0.3s ease-out; 
-}
+    transition: width 0.3s ease-out;
+  }
 
-#menu > li > button:hover::after {
-  width: 0;
+  &:hover::after {
+    width: 0;
+  }
 }
 
 @media (max-width: 600px) {
@@ -122,7 +122,7 @@ nav > button {
     background: none;
     border: none;
     display: inline-block;
-    
+
     position: absolute;
     top: 3rem;
     left: 85vw;
@@ -160,7 +160,7 @@ nav > button {
   .line-1 {
     background-color: rgb(185, 105, 250);
     border: none;
-   
+
     width: 1.2rem;
     height: 3px;
   }
@@ -196,7 +196,7 @@ nav > button {
   .line-2 {
     background-color: rgb(185, 105, 250);
     border: none;
-    
+
     width: 1.2rem;
     height: 3px;
     margin-top: 5px;
@@ -227,7 +227,7 @@ nav > button {
       width: 1.5rem;
       transform: rotate(45deg) translate(-6.5px, -6.5px);
     }
-    
+
     to {
       width: 1.2rem;
       transform: rotate(0deg) translate(0px, 0px);
@@ -237,7 +237,7 @@ nav > button {
   .line-3 {
     background-color: rgb(185, 105, 250);
     border: none;
-    
+
     width: 1.2rem;
     height: 3px;
     margin-top: 5px;
@@ -254,7 +254,7 @@ nav > button {
   #menu {
     height: 100vh;
     margin-top: 0;
-    
+
     display: none;
     flex-direction: column;
     align-items: center;

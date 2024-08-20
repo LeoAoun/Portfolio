@@ -77,10 +77,10 @@
 
   transform: translateX(1.5rem);
   transition: transform 0.5s ease-out;
-}
 
-#section-1 .subtitle:hover {
-  transform: translateX(0);
+  &:hover {
+    transform: translateX(0);
+  }
 }
 
 #section-1 .summary {
@@ -112,9 +112,9 @@
   transform: translateY(0);
 
   transition: transform 0.2s ease-out, fill 0.2s ease-out;
-}
 
-#section-1 .social-media svg:hover {
-  transform: translateY(-0.5rem);
-  fill: var(--purple);
+  &:hover {
+    transform: translateY(-0.5rem);
+    fill: var(--purple);
+  }
 }

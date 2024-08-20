@@ -28,11 +28,31 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  &::after {
+    content: "";
+    background: linear-gradient(
+      95deg,
+      rgb(18, 30, 39, 1) 0%,
+      rgba(18, 30, 39, 1) 50%,
+      rgba(18, 30, 39, 0) 100%
+    );
+    display: block;
+
+    width: 20rem;
+    height: 6.3rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    animation: loadFadeIn 5s ease forwards;
+  }
 }
 
 .loading img {
   user-select: none;
-  
+
   width: 9rem;
   height: 6rem;
 
@@ -47,24 +67,4 @@
     transform: translate(-5rem);
     opacity: 0;
   }
-}
-
-.loading::after {
-  content: "";
-  background: linear-gradient(
-    95deg,
-    rgb(18, 30, 39, 1) 0%,
-    rgba(18, 30, 39, 1) 50%,
-    rgba(18, 30, 39, 0) 100%
-  );
-  display: block;
-
-  width: 20rem;
-  height: 6.3rem;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  animation: loadFadeIn 5s ease forwards;
 }

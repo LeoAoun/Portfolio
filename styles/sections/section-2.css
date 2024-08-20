@@ -48,42 +48,40 @@
   position: relative;
 
   text-align: center;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: #000000;
+
+    width: 2rem;
+    height: 3px;
+
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 5px);
+
+    animation: lineSubtitleOut 0.3s ease forwards;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: #000000;
+
+    width: 2rem;
+    height: 3px;
+
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 5px);
+
+    animation: lineSubtitleOut 0.3s ease forwards;
+  }
 }
 
-#section-2 .subtitle::before {
-  content: "";
-  display: block;
-  background-color: #000000;
-
-  width: 2rem;
-  height: 3px;
-
-  position: absolute;
-  top: 50%;
-  right: calc(100% + 5px);
-
-  animation: lineSubtitleOut 0.3s ease forwards;
-}
-
-#section-2 .subtitle::after {
-  content: "";
-  display: block;
-  background-color: #000000;
-
-  width: 2rem;
-  height: 3px;
-
-  position: absolute;
-  top: 50%;
-  left: calc(100% + 5px);
-
-  animation: lineSubtitleOut 0.3s ease forwards;
-}
-
-#section-2 .title:hover + .subtitle::before,
-#section-2 .title:hover + .subtitle::after,
-#section-2 .subtitle:hover::before,
-#section-2 .subtitle:hover::after {
+#section-2 .title-subtitle:hover .subtitle::before,
+#section-2 .title-subtitle:hover .subtitle::after {
   animation: lineSubtitleIn 0.3s ease forwards;
 }
 
@@ -140,11 +138,11 @@
   margin-top: -3rem;
 
   transition: background-color 0.2s ease-in-out, transform 0.1s ease-out;
-}
 
-#section-2 .cv-div > button:hover {
-  cursor: pointer;
-  background-color: var(--darkPurple);
+  &:hover {
+    cursor: pointer;
+    background-color: var(--darkPurple);
+  }
 }
 
 #section-2 .cv-div > button:active {

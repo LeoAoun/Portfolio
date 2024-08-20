@@ -48,42 +48,40 @@
   font-weight: 500;
   font-size: 1.2rem;
   position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: #fff;
+
+    width: 2rem;
+    height: 3px;
+
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 5px);
+
+    animation: lineSubtitleOut 0.3s ease forwards;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: #fff;
+
+    width: 2rem;
+    height: 3px;
+
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 5px);
+
+    animation: lineSubtitleOut 0.3s ease forwards;
+  }
 }
 
-#section-5 .subtitle::before {
-  content: "";
-  display: block;
-  background-color: #fff;
-
-  width: 2rem;
-  height: 3px;
-
-  position: absolute;
-  top: 50%;
-  right: calc(100% + 5px);
-
-  animation: lineSubtitleOut 0.3s ease forwards;
-}
-
-#section-5 .subtitle::after {
-  content: "";
-  display: block;
-  background-color: #fff;
-
-  width: 2rem;
-  height: 3px;
-
-  position: absolute;
-  top: 50%;
-  left: calc(100% + 5px);
-
-  animation: lineSubtitleOut 0.3s ease forwards;
-}
-
-#section-5 .title:hover + .subtitle::before,
-#section-5 .title:hover + .subtitle::after,
-#section-5 .subtitle:hover::before,
-#section-5 .subtitle:hover::after {
+#section-5 .title-subtitle:hover .subtitle::before,
+#section-5 .title-subtitle:hover .subtitle::after {
   animation: lineSubtitleIn 0.3s ease forwards;
 }
 
@@ -113,7 +111,7 @@
 #section-5 #next img,
 #section-5 #previous img {
   background-color: transparent;
-  
+
   height: 3rem;
   width: 2.5rem;
   border: none;
@@ -133,7 +131,7 @@
   width: 60rem;
   gap: 2rem;
   border-radius: 0.5rem;
-  
+
   display: flex;
   overflow: hidden;
 }
@@ -271,26 +269,26 @@
   background-color: var(--background);
   border: 1px solid var(--blue);
   position: relative;
-}
 
-#section-5 .container-2 .buttons .button-code::before {
-  content: "";
-  display: block;
-  background-color: var(--blue);
-  z-index: -1;
+  &:hover::before {
+    width: 6rem;
+  }
 
-  width: 0;
-  height: 3rem;
+  &::before {
+    content: "";
+    display: block;
+    background-color: var(--blue);
+    z-index: -1;
 
-  position: absolute;
-  top: -1px;
-  left: -1px;
+    width: 0;
+    height: 3rem;
 
-  transition: width 0.3s ease-out;
-}
+    position: absolute;
+    top: -1px;
+    left: -1px;
 
-#section-5 .container-2 .buttons .button-code:hover::before {
-  width: 6rem;
+    transition: width 0.3s ease-out;
+  }
 }
 
 #section-5 .container-2 .buttons .button-site {
@@ -308,34 +306,34 @@
   background-color: #ffffff1a;
   cursor: not-allowed;
   position: relative;
-}
 
-#section-5 .container-2 .buttons .button-site-inactive::after {
-  content: "⚠️Site não hospedado...";
-  background-color: rgb(226, 21, 21);
-  color: rgb(255, 255, 255);
+  &:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-  height: 4rem;
-  padding: 0 1rem;
-  border-radius: 0.5rem;
-  z-index: 10;
+  &::after {
+    content: "⚠️Site não hospedado...";
+    background-color: rgb(226, 21, 21);
+    color: rgb(255, 255, 255);
 
-  display: flex;
-  text-align: justify;
-  align-items: center;
+    height: 4rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    z-index: 10;
 
-  position: absolute;
-  top: -150%;
-  left: -1.5rem;
+    display: flex;
+    text-align: justify;
+    align-items: center;
 
-  opacity: 0;
-  transform: translateY(-2rem);
-  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
-}
+    position: absolute;
+    top: -150%;
+    left: -1.5rem;
 
-#section-5 .container-2 .buttons .button-site-inactive:hover::after {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 0;
+    transform: translateY(-2rem);
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  }
 }
 
 #section-5 .container-2 .buttons .button-site-inactive a {

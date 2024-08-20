@@ -318,6 +318,11 @@ body {
     min-width: 28rem;
     max-width: 28rem;
   }
+
+  #section-6 .container .details {
+    width: 90%;
+  }
+
 }
 
 @media screen and (max-height: 860px) {
@@ -451,7 +456,7 @@ body {
 
   #section-6 .container .details {
     width: 100%;
-    gap: 1rem;
+    gap: 5rem;
   }
 
   #section-6 .container .details .contact-info .background-icon {
@@ -460,7 +465,7 @@ body {
   }
 
   #section-6 .container .details .contact-info div {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -664,6 +669,10 @@ body {
   #section-5 .project {
     min-width: 15.5rem;
     max-width: 15.5rem;
+  }
+
+  #section-6 .container .details .contact-info div {
+    margin-left: 0.5rem;
   }
 }
 
