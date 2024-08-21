@@ -17,8 +17,8 @@ const techs = [
   { name: "Springboot", stack: "ORM", src: "springboot" },
   { name: "Prisma", stack: "ORM", src: "prisma" },
   { name: "Electron", stack: "Desktop", src: "electron" },
+  { name: "Docker", stack: "DevOps", src: "docker" },
   { name: "C++", stack: "", src: "cplusplus" },
-  { name: "C", stack: "", src: "c" },
 ];
 
 
@@ -44,6 +44,5 @@ techs.forEach((tech) => {
   button.appendChild(span1);
   button.appendChild(img);
   button.appendChild(span2);
-
   techsList.appendChild(li);
 });
