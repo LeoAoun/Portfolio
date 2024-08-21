@@ -280,6 +280,10 @@ body {
     font-size: 1rem;
   }
 
+  #modal-cv #close-modal {
+    display: block;  
+  }
+
   #modal-cv > a > img {
     width: 30rem;
   }
@@ -322,7 +326,6 @@ body {
   #section-6 .container .details {
     width: 90%;
   }
-
 }
 
 @media screen and (max-height: 860px) {
@@ -517,9 +520,21 @@ body {
     font-size: 1.7rem;
     margin-left: 0rem;
   }
+
   #section-1 .container-1 .summary {
     font-size: 1rem;
     width: 19rem;
+  }
+  
+  #section-1 .social-media {
+    margin-top: 4rem;
+    justify-content: center;
+  }
+
+  #modal-cv #close-modal {
+    font-size: 1rem;
+    width: 4rem;
+    left: 75vw;
   }
 
   #modal-cv > a > img {
@@ -625,6 +640,10 @@ body {
   #section-1 .container-1 .summary {
     font-size: 1rem;
     width: 17.5rem;
+  }
+
+  #modal-cv #close-modal {
+    left: 70vw;
   }
 
   #modal-cv > a > img {
