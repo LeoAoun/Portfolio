@@ -1,11 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-  particlesJS(
-    "particles-js",
+  function initParticles() {
+    let particleCount = 70;
+    let onHoverEnable = true;
+    let onClickEnable = true;
 
-    {
+    if (window.matchMedia("(max-width: 450px)").matches) {
+      particleCount = 35;
+      onHoverEnable = false;
+      onClickEnable = false;
+    }
+
+    particlesJS("particles-js", {
       particles: {
         number: {
-          value: 70,
+          value: particleCount,
           density: {
             enable: true,
             value_area: 500,
@@ -74,11 +82,11 @@ document.addEventListener("DOMContentLoaded", function () {
         detect_on: "window",
         events: {
           onhover: {
-            enable: true,
+            enable: onHoverEnable,
             mode: "repulse",
           },
           onclick: {
-            enable: true,
+            enable: onClickEnable,
             mode: "push",
           },
           resize: true,
@@ -117,6 +125,9 @@ document.addEventListener("DOMContentLoaded", function () {
         background_repeat: "no-repeat",
         background_size: "cover",
       },
-    }
-  );
+    });
+  }
+  
+  // Initialize particles based on the current viewport size
+  initParticles();
 });
