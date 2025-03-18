@@ -86,6 +86,8 @@
 }
 
 #particles-js {
+  user-select: none;
+
   width: 110%;
   height: 110%;
 

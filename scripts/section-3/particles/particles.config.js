@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   function initParticles() {
-    let particleCount = 70;
+    let particleCount = 50;
     let onHoverEnable = true;
     let onClickEnable = true;
 
     if (window.matchMedia("(max-width: 450px)").matches) {
-      particleCount = 35;
+      particleCount = 25;
       onHoverEnable = false;
       onClickEnable = false;
     }

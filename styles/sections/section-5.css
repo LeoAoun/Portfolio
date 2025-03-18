@@ -303,36 +303,31 @@
 }
 
 #section-5 .container-2 .buttons .button-site-inactive {
-  background-color: #ffffff1a;
   cursor: not-allowed;
+  background-color: #ffffff1a;
   position: relative;
 
   &:hover::after {
-    opacity: 1;
-    transform: translateY(0);
+    display: flex;
   }
 
   &::after {
+    display: none;
     content: "⚠️Site não hospedado...";
     background-color: rgb(226, 21, 21);
-    color: rgb(255, 255, 255);
+    color: #fff;
 
     height: 4rem;
     padding: 0 1rem;
     border-radius: 0.5rem;
     z-index: 10;
 
-    display: flex;
     text-align: justify;
     align-items: center;
 
     position: absolute;
     top: -150%;
     left: -1.5rem;
-
-    opacity: 0;
-    transform: translateY(-2rem);
-    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
   }
 }
 
