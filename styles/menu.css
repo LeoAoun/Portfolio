@@ -47,8 +47,11 @@ nav > button {
 }
 
 #menu > li > button {
-  user-select: none;
   cursor: pointer;
+  user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+
   font-family: "Righteous", cursive;
   background-color: transparent;
   color: var(--blue);
@@ -252,8 +255,12 @@ nav > button {
   }
 
   #menu {
-    height: 100vh;
+    height: 100dvh;
     margin-top: 0;
+
+    position: fixed;
+    overflow: none;
+    touch-action: none;
 
     display: none;
     flex-direction: column;

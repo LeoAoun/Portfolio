@@ -161,6 +161,7 @@ body {
 
   #section-4 .container {
     flex-direction: column;
+    max-width: 100%;
     gap: 2rem;
   }
 
@@ -196,7 +197,7 @@ body {
   }
 
   #section-3 {
-    width: 100%;
+    width: 90%;
   }
 
   #section-3 .tech {
@@ -281,7 +282,7 @@ body {
   }
 
   #modal-cv #close-modal {
-    display: block;  
+    display: block;
   }
 
   #modal-cv > a > img {
@@ -355,6 +356,32 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  #menu {
+    gap: 0rem;
+  }
+
+  #menu > li > button {
+    font-size: 1.2rem;
+  }
+
+  #section-1 {
+    margin-top: 15rem;
+  }
+
+  #section-1 .title {
+    font-size: 2.5rem;
+  }
+
+  #section-1 .subtitle {
+    font-size: 2rem;
+    margin-left: 0rem;
+  }
+
+  #section-1 .container-1 .summary {
+    font-size: 1.1rem;
+    width: 25rem;
+  }
+
   #section-3 .container #techs-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -397,20 +424,21 @@ body {
   }
 
   #section-1 {
-    margin-top: 10rem;
+    margin-top: 15rem;
   }
 
   #section-1 .title {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 
   #section-1 .subtitle {
-    font-size: 2rem;
-    margin-left: 1rem;
+    font-size: 1.8rem;
+    margin-left: 0rem;
   }
+
   #section-1 .container-1 .summary {
     font-size: 1rem;
-    width: 25rem;
+    width: 23rem;
   }
 
   #modal-cv > a > img {
@@ -421,6 +449,10 @@ body {
     width: 10rem;
     height: 7rem;
     scale: 0.85;
+  }
+
+  #section-3 {
+    width: 100%;
   }
 
   #section-3 .container #techs-list .tech .typewriter {
@@ -455,6 +487,12 @@ body {
   #section-6 .container,
   #section-6 .container form {
     width: 100%;
+  }
+
+  #section-6 .container form .fullname,
+  #section-6 .container form .email-phone {
+    flex-direction: column;
+    align-items: start;
   }
 
   #section-6 .container .details {
@@ -507,25 +545,25 @@ body {
   }
 
   #section-1 {
-    margin-left: 0;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
   }
 
   #section-1 .title {
-    margin-left: 0;
     font-size: 2.3rem;
   }
 
   #section-1 .subtitle {
     font-size: 1.7rem;
-    margin-left: 0rem;
+    transform: translateX(1rem);
   }
 
   #section-1 .container-1 .summary {
     font-size: 1rem;
     width: 19rem;
   }
-  
+
   #section-1 .social-media {
     margin-top: 4rem;
     justify-content: center;
@@ -541,8 +579,12 @@ body {
     width: 20rem;
   }
 
+  #section-3 .container #techs-list {
+    gap: 0;
+  }
+
   #section-3 .container #techs-list .tech {
-    width: 11rem;
+    width: 10rem;
     height: 7rem;
   }
 
@@ -624,12 +666,10 @@ body {
   }
 
   #section-1 {
-    margin-left: 0 !important;
     width: 100%;
   }
 
   #section-1 .title {
-    margin-left: 0;
     font-size: 2rem;
   }
 
@@ -650,17 +690,12 @@ body {
     width: 15rem;
   }
 
-  #section-3 .container #techs-list .tech {
-    width: 10rem;
-    height: 7rem;
-  }
-
   #section-4 .container .card {
     max-height: 30rem;
   }
 
   #section-4 .container .card .card-title-date #card-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   #section-4 .container .card .card-title-date .card-date-time {
@@ -682,12 +717,12 @@ body {
   }
 
   #section-5 .carousel {
-    width: 15.5rem;
+    width: 15rem;
   }
 
   #section-5 .project {
-    min-width: 15.5rem;
-    max-width: 15.5rem;
+    min-width: 15rem;
+    max-width: 15rem;
   }
 
   #section-6 .container .details .contact-info div {
@@ -713,11 +748,20 @@ body {
 
   #section-1 {
     justify-content: center;
-    margin-left: 1.2rem;
   }
 
   #section-1 .subtitle {
     font-size: 1.4rem;
+  }
+
+  #section-1 .container-1 .summary {
+    font-size: 0.9rem;
+    width: 16rem;
+  }
+
+  #section-1 .container-1 .social-media svg {
+    width: 2.2rem;
+    height: 2.2rem;
   }
 
   #section-3 .container #techs-list {
@@ -725,7 +769,7 @@ body {
   }
 
   #section-3 .container #techs-list .tech {
-    width: 9rem;
+    width: 8.5rem;
     height: 7rem;
   }
 
@@ -734,11 +778,11 @@ body {
   }
 
   #section-4 .container .card .card-title-date #card-title {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   #section-4 .container .card .card-title-date .card-date-time {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   #section-4 .container .card #card-business {

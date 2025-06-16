@@ -127,10 +127,8 @@
 #section-4 .container .experiences .prodam {
   cursor: pointer;
   color: var(--purple);
-
-  border-left: 6px solid var(--purple);
   padding-left: calc(3rem - 6px);
-
+  border-left: 6px solid var(--purple);
   transition: border-left 0.2s ease;
 }
 

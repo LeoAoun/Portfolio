@@ -110,6 +110,9 @@
 
 #section-5 #next img,
 #section-5 #previous img {
+  user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
   background-color: transparent;
 
   height: 3rem;

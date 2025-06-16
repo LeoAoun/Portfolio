@@ -72,7 +72,7 @@
   color: var(--lightPurple);
   font-weight: 600;
   font-size: 2.3rem;
- 
+
   margin-left: 4rem;
 
   transform: translateX(1.5rem);
@@ -83,37 +83,50 @@
   }
 }
 
-#section-1 .summary {
+#section-1 .container-1 .summary {
   font-family: "Archivo", sans-serif;
   color: rgb(212, 212, 212);
   text-align: justify;
   font-size: 1.3rem;
   font-weight: 400;
-  
+
   width: 31rem;
   margin-top: 2rem;
 }
 
-#section-1 .social-media {
+#section-1 .container-1 .social-media {
   gap: 2rem;
   margin-top: 5rem;
-  
+
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
+#section-1 .container-1 .social-media a {
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: inherit;
 
-#section-1 .social-media svg {
+  display: flex;
+  align-items: center;
+}
+
+#section-1 .container-1 .social-media svg {
   width: 2.5rem;
   height: 2.5rem;
-  
+
   fill: var(--orange);
   transform: translateY(0);
 
   transition: transform 0.2s ease-out, fill 0.2s ease-out;
+}
 
-  &:hover {
+@media (hover: hover) and (pointer: fine) {
+  #section-1 .container-1 .social-media svg:hover {
     transform: translateY(-0.5rem);
     fill: var(--purple);
   }

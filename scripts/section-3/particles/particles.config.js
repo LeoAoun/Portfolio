@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let onClickEnable = true;
 
     if (window.matchMedia("(max-width: 450px)").matches) {
-      particleCount = 25;
+      particleCount = 15;
       onHoverEnable = false;
       onClickEnable = false;
     }

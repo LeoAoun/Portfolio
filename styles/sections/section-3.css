@@ -88,8 +88,8 @@
 #particles-js {
   user-select: none;
 
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
 
   position: absolute;
 

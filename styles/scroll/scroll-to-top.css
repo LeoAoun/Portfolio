@@ -1,34 +1,31 @@
 #scroll-to-top {
-  user-select: none;
-  display: none;
   cursor: pointer;
+  user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+
+  display: none;
   background-color: var(--purple);
 
-  width: 5rem;
-  height: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border: none;
   border-radius: 50%;
 
   position: fixed;
   bottom: 3rem;
   right: 5rem;
-  
+
   transition: background-color 0.3s ease;
   z-index: 1;
-
-  &:hover {
-    background-color: var(--darkPurple);
-  }
 }
 
 #scroll-to-top img {
+  user-select: none;
+
   width: 4rem;
   transform: rotate(-90deg);
   transition: transform 0.3s ease;
-
-  &:hover {
-    transform: rotate(-90deg) translateX(3px);
-  }
 }
 
 @keyframes animateScrollToTop {
@@ -45,4 +42,14 @@
 .animate-scroll-to-top {
   display: block !important;
   animation: animateScrollToTop 0.5s forwards;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #scroll-to-top:hover {
+    background-color: var(--darkPurple);
+  }
+
+  #scroll-to-top img:hover {
+    transform: rotate(-90deg) translateX(3px);
+  }
 }

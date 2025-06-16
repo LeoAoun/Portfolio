@@ -96,8 +96,8 @@
   background-color: #fff;
 
   width: 90%;
-  height: 42rem;
-  gap: 1rem;
+  padding: 1.5rem 0;
+  gap: 2rem;
 
   display: flex;
   flex-direction: column;
@@ -114,17 +114,13 @@
   font-weight: 600;
   font-size: 1.5rem;
   letter-spacing: 1px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
-#section-6 .container form div {
-  display: flex;
-  gap: 2rem;
-}
-
-.fullname,
-.email-phone {
+#section-6 .container form .fullname,
+#section-6 .container form .email-phone {
   width: 90%;
+  gap: 2rem;
   display: flex;
   align-items: center;
   justify-items: center;
@@ -135,9 +131,8 @@
   font-weight: 600;
   letter-spacing: 0.5px;
 
-  width: 90%;
+  width: 100%;
   gap: 0.5rem;
-
   display: flex;
   flex-direction: column;
 }
@@ -155,6 +150,10 @@
   align-items: center;
 }
 
+#section-6 .container form .message {
+  width: 90%;
+}
+
 #section-6 .container label textarea {
   font-family: "Ubuntu", sans-serif;
   appearance: none;
@@ -166,8 +165,6 @@
   padding: 0.5rem;
   border: 1px solid grey;
   outline: none;
-
-  align-self: center;
 }
 
 #section-6 .container input[type="submit"] {
