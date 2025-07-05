@@ -150,7 +150,6 @@
 }
 
 #modal-cv {
-  cursor: pointer;
   background-color: rgba(0, 0, 0, 0.8);
 
   display: none;
@@ -165,25 +164,7 @@
   bottom: 0;
 }
 
-#modal-cv #cv-close {
-  font-family: "Raleway", sans-serif;
-  background-color: red;
-  color: aliceblue;
-  font-size: 1rem;
-  font-weight: 600;
-  display: none;
-
-  width: 10rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  z-index: 1;
-
-  position: absolute;
-  top: 0;
-  left: -20rem;
-}
-
-#modal-cv a img {
+#modal-cv img {
   width: 37rem;
   position: absolute;
   left: 50%;
@@ -191,30 +172,13 @@
   transform: translate(-50%, -50%);
 }
 
-#modal-cv a .cv-span {
-  font-family: "Raleway", sans-serif;
-  background-color: var(--background);
-  color: aliceblue;
-  font-size: 1rem;
-  font-weight: 600;
-  display: none;
-
-  width: 10rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  z-index: 1;
-
-  position: absolute;
-}
-
 #close-modal {
-  display: none;
   cursor: pointer;
   font-family: "Archivo", sans-serif;
-  background-color: red;
+  background-color: var(--red);
   color: #fff;
   font-size: 1.1rem;
-  
+
   width: 5rem;
   height: 2rem;
   border-radius: 0.5rem;
@@ -223,6 +187,14 @@
   text-align: center;
 
   position: absolute;
-  left: 80vw;	
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 0%);
   top: 1.5rem;
+
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--darkRed);
+  }
 }
