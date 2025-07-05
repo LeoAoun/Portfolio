@@ -5,15 +5,21 @@ const cardTime = document.getElementById("time");
 const cardDescription = document.getElementById("card-description");
 const tabs = document.querySelectorAll(".experience-tab");
 
+// Define the keys for each experience
+const ExperienceKeys = {
+  PRODAM: "prodam",
+  VIVO: "vivo",
+};
+
 // Data for each experience
 const experiencesData = {
-  prodam: {
+  [ExperienceKeys.PRODAM]: {
     title: "Desenvolvedor C++",
     business: "PRODAM/SP",
     date: "03/2023 - 03/2025",
     description: `Atuei no desenvolvimento e manutenção do SIGPEC, o sistema de gestão de pessoas da Prefeitura de São Paulo, com foco no módulo de cálculo da folha de pagamento. Utilizando C++ e programação orientada a objetos, otimizei código legado, implementei novas funcionalidades e executei correções de bugs para garantir a precisão e a conformidade legal dos pagamentos dos servidores.`,
   },
-  vivo: {
+  [ExperienceKeys.VIVO]: {
     title: "Analista Cyber Security",
     business: "Vivo (Telefônica)",
     date: "03/2025 - Atualmente",
@@ -45,4 +51,4 @@ tabs.forEach((tab) => {
 });
 
 // Initialize the card with the first experience
-updateCard("prodam");
+updateCard(ExperienceKeys.VIVO);

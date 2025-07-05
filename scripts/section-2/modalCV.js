@@ -1,8 +1,6 @@
 const modalCV = document.getElementById("modal-cv");
 const buttonCV = document.getElementById("button-modal-cv");
 const cv = document.getElementById("cv");
-const cvClose = document.getElementById("cv-close");
-const cvSpan = document.querySelector(".cv-span");
 const buttonCloseModal = document.getElementById("close-modal");
 
 // Verify if the parameter is in the url when the page loads and open the modal
@@ -40,55 +38,9 @@ buttonCV.addEventListener("click", () => {
   updateUrl(params);
 });
 
-// Close the modal when the user clicks outside of it
-window.addEventListener("click", (e) => {
-  if (e.target == modalCV) {
-    modalCV.style.display = "none";
-    params.delete("modalcv");
-    updateUrl(params);
-  }
-});
-
 // Close the modal when the user clicks on the close button
 buttonCloseModal.addEventListener("click", () => {
   modalCV.style.display = "none";
   params.delete("modalcv");
   updateUrl(params);
-});
-
-// Move the close span with the cursor
-modalCV.addEventListener("mousemove", (e) => {
-  if (e.target !== buttonCloseModal) {
-    cvClose.style.display = "block";
-    cvClose.style.top = e.clientY + 20 + "px";
-    if (window.innerWidth > 900) {
-      cvClose.style.left = e.clientX + 20 + "px";
-    } else {
-      cvClose.style.left = e.clientX - 160 + "px";
-    }
-  }
-  else {
-    cvClose.style.display = "none";
-  }
-});
-
-// Move the span with the cursor
-cv.addEventListener("mousemove", (e) => {
-  cvSpan.style.display = "block";
-  cvSpan.style.top = e.clientY + 20 + "px";
-  if (window.innerWidth > 900) {
-    cvSpan.style.left = e.clientX + 20 + "px";
-  } else {
-    cvSpan.style.left = e.clientX - 160 + "px";
-  }
-});
-
-// Hide the close span when the cursor leaves the element
-modalCV.addEventListener("mouseleave", (e) => {
-  if (e.target == cv) cvClose.style.display = "none";
-});
-
-// Hide the span when the cursor leaves the element
-cv.addEventListener("mouseleave", () => {
-  cvSpan.style.display = "none";
 });

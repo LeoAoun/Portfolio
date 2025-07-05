@@ -107,7 +107,7 @@
   justify-content: flex-start;
 }
 
-#section-4 .container .experiences > .experience-tab {
+#section-4 .container .experiences .experience-tab {
   cursor: pointer;
   background-color: var(--darkGrey);
 
@@ -123,23 +123,23 @@
   transition: all 0.25s ease-in-out;
 }
 
-#section-4 .container .experiences > .experience-tab span {
-  color: white;
+#section-4 .container .experiences .experience-tab span {
+  color: #fff;
   font-size: 1.2rem;
   font-weight: 600;
   transition: color 0.25s ease-in-out;
 }
 
-#section-4 .container .experiences > .experience-tab.active {
+#section-4 .container .experiences .experience-tab.active {
   background-color: var(--grey);
   border-left-color: var(--purple);
 }
 
-#section-4 .container .experiences > .experience-tab.active span {
+#section-4 .container .experiences .experience-tab.active span {
   color: var(--purple);
 }
 
-#section-4 .container .experiences > .experience-tab:not(.active):hover {
+#section-4 .container .experiences .experience-tab:not(.active):hover {
   background-color: #444;
 }
 

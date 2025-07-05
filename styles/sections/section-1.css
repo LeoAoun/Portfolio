@@ -87,10 +87,11 @@
   font-family: "Archivo", sans-serif;
   color: rgb(212, 212, 212);
   text-align: justify;
-  font-size: 1.3rem;
+  text-align-last: left;
+  font-size: 1.2rem;
   font-weight: 400;
 
-  width: 31rem;
+  width: 28.5rem;
   margin-top: 2rem;
 }
 

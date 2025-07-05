@@ -281,11 +281,7 @@ body {
     font-size: 1rem;
   }
 
-  #modal-cv #close-modal {
-    display: block;
-  }
-
-  #modal-cv > a > img {
+  #modal-cv img {
     width: 30rem;
   }
 
@@ -342,7 +338,7 @@ body {
     margin-bottom: 10rem;
   }
 
-  #modal-cv > a > img {
+  #modal-cv img {
     width: 30rem;
   }
 
@@ -441,7 +437,7 @@ body {
     width: 23rem;
   }
 
-  #modal-cv > a > img {
+  #modal-cv img {
     width: 25rem;
   }
 
@@ -521,7 +517,7 @@ body {
     margin-top: 12rem;
   }
 
-  #modal-cv > a > img {
+  #modal-cv img {
     width: 25rem;
   }
 }
@@ -572,10 +568,9 @@ body {
   #modal-cv #close-modal {
     font-size: 1rem;
     width: 4rem;
-    left: 75vw;
   }
 
-  #modal-cv > a > img {
+  #modal-cv img {
     width: 20rem;
   }
 
@@ -650,7 +645,7 @@ body {
 }
 
 @media screen and (max-height: 600px) {
-  #modal-cv > a > img {
+  #modal-cv img {
     width: 20rem;
   }
 }
@@ -678,15 +673,11 @@ body {
   }
 
   #section-1 .container-1 .summary {
-    font-size: 1rem;
-    width: 17.5rem;
+    font-size: 0.9rem;
+    width: 17rem;
   }
 
-  #modal-cv #close-modal {
-    left: 70vw;
-  }
-
-  #modal-cv > a > img {
+  #modal-cv img {
     width: 15rem;
   }
 
@@ -731,7 +722,7 @@ body {
 }
 
 @media screen and (max-height: 500px) {
-  #modal-cv > a > img {
+  #modal-cv img {
     width: 15rem;
   }
 }
@@ -755,7 +746,7 @@ body {
   }
 
   #section-1 .container-1 .summary {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     width: 16rem;
   }
 
