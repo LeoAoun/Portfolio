@@ -107,33 +107,40 @@
   justify-content: flex-start;
 }
 
-#section-4 .container .experiences > div {
+#section-4 .container .experiences > .experience-tab {
+  cursor: pointer;
   background-color: var(--darkGrey);
 
   width: 100%;
   height: 4rem;
   padding-left: 3rem;
+  border: none;
+  border-left: 6px solid transparent;
 
   display: flex;
   align-items: center;
+
+  transition: all 0.25s ease-in-out;
 }
 
-#section-4 .container .experiences > div span {
+#section-4 .container .experiences > .experience-tab span {
   color: white;
   font-size: 1.2rem;
   font-weight: 600;
+  transition: color 0.25s ease-in-out;
 }
 
-#section-4 .container .experiences .prodam {
-  cursor: pointer;
-  color: var(--purple);
-  padding-left: calc(3rem - 6px);
-  border-left: 6px solid var(--purple);
-  transition: border-left 0.2s ease;
+#section-4 .container .experiences > .experience-tab.active {
+  background-color: var(--grey);
+  border-left-color: var(--purple);
 }
 
-#section-4 .container .experiences .prodam span {
+#section-4 .container .experiences > .experience-tab.active span {
   color: var(--purple);
+}
+
+#section-4 .container .experiences > .experience-tab:not(.active):hover {
+  background-color: #444;
 }
 
 #section-4 .container .card {
