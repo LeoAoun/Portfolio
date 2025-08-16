@@ -1,4 +1,4 @@
-const projects = document.querySelectorAll(".project");
+const projects = document.querySelectorAll("#carousel .project");
 const prev = document.querySelector("#previous img");
 const next = document.querySelector("#next img");
 

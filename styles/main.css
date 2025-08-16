@@ -107,7 +107,7 @@ body {
     justify-content: center;
   }
 
-  #section-5 .carousel {
+  #section-5 #carousel {
     width: 36.5rem;
   }
 
@@ -219,7 +219,7 @@ body {
     justify-content: center;
   }
 
-  #section-5 .carousel {
+  #section-5 #carousel {
     width: 30rem;
   }
 
@@ -311,7 +311,7 @@ body {
     gap: 2rem;
   }
 
-  #section-5 .carousel {
+  #section-5 #carousel {
     width: 28rem;
   }
 
@@ -395,7 +395,7 @@ body {
     font-size: 1.1rem;
   }
 
-  #section-5 .carousel {
+  #section-5 #carousel {
     width: 22.4rem;
   }
 
@@ -463,7 +463,7 @@ body {
     gap: 2rem;
   }
 
-  #section-5 .carousel {
+  #section-5 #carousel {
     width: 19.5rem;
   }
 
@@ -614,7 +614,7 @@ body {
     width: 2rem;
   }
 
-  #section-5 .carousel {
+  #section-5 #carousel {
     width: 19.5rem;
   }
 
@@ -707,7 +707,7 @@ body {
     width: 2rem;
   }
 
-  #section-5 .carousel {
+  #section-5 #carousel {
     width: 15rem;
   }
 
