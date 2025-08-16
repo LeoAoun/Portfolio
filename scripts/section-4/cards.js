@@ -17,13 +17,13 @@ const experiencesData = {
     title: "Desenvolvedor C++",
     business: "PRODAM/SP",
     date: "03/2023 - 03/2025",
-    description: `Atuei no desenvolvimento e manutenção do SIGPEC, o sistema de gestão de pessoas da Prefeitura de São Paulo, com foco no módulo de cálculo da folha de pagamento. Utilizando C++ e programação orientada a objetos, otimizei código legado, implementei novas funcionalidades e executei correções de bugs para garantir a precisão e a conformidade legal dos pagamentos dos servidores.`,
+    description: `Atuei no desenvolvimento e manutenção em C++ do módulo de folha de pagamentos do SIGPEC, utilizado pela Prefeitura de São Paulo para gerenciar mais de 220 mil servidores. Minhas tarefas cobriam desde a implementação de novas funcionalidades e otimização de código até a execução de testes e correção de bugs, visando sempre garantir a precisão total dos cálculos e a conformidade com a legislação.`,
   },
   [ExperienceKeys.VIVO]: {
     title: "Analista Cyber Security",
     business: "Vivo (Telefônica)",
     date: "03/2025 - Atualmente",
-    description: `Atuo no time de DevSecOps, desenvolvendo e mantendo pipelines de segurança para ambientes CI/CD. Integro ferramentas como Semgrep (SAST), OWASP ZAP e Tenable WAS (DAST), Dependency-Check (SCA), Trivy (IaC Scanning) e Dependency-Track (SBOM Scanning), com os resultados centralizados na plataforma DefectDojo (ASPM). Contribuo para a automação do ciclo de análise de vulnerabilidades e utilizo Python para otimizar processos internos da equipe por meio de scripts e automatizações.`,
+    description: `Lidero a implementação de pipelines de segurança CI/CD na Vivo, atuando como ponto focal técnico para as equipes de engenharia. Apoio a integração de um ecossistema de ferramentas de DevSecOps (SAST, DAST, SCA, IaC Scanning, ASPM, etc.) e soluciono desafios de conectividade para garantir a conformidade dos projetos. Adicionalmente, desenvolvo automações em Python para otimizar a produtividade e o fluxo de trabalho da equipe.`,
   },
 };
 
