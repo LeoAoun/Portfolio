@@ -1,6 +1,7 @@
 const scrollToTop = document.getElementById("scroll-to-top");
 const scrollDown = document.getElementById("scroll-down");
 const nav = document.getElementById("nav");
+const languageSwitcher = document.getElementById("language-switcher");
 const section1 = document.getElementById("section-1");
 const section2 = document.getElementById("section-2");
 const section3 = document.getElementById("section-3");

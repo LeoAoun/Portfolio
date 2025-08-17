@@ -20,7 +20,9 @@ setTimeout(() => {
   const background = document.getElementById("background");
   background.style.display = "block";
 
-  animateNavContainer1();
+  animateNav();
+  animateLanguageSwitcher();
+  animateContainersSection1();
 
   setTimeout(() => {
     const loadingBackground = document.querySelector(".loading-background");
@@ -36,7 +38,7 @@ setTimeout(() => {
 
     // Dispatch resize event to fix the particles.js bug
     window.dispatchEvent(new Event("resize"));
-    
+
     setTimeout(() => {
       nav.classList.remove("animate-nav-loading");
     }, 1500);
@@ -45,6 +47,7 @@ setTimeout(() => {
 
 function removeDisable() {
   nav.classList.remove("disable");
+  languageSwitcher.classList.remove("disable");
   section1.classList.remove("disable");
   section2.classList.remove("disable");
   section3.classList.remove("disable");
@@ -53,9 +56,15 @@ function removeDisable() {
   section6.classList.remove("disable");
 }
 
-function animateNavContainer1() {
+function animateNav() {
   nav.classList.add("animate-nav");
+}
 
+function animateLanguageSwitcher() {
+  languageSwitcher.classList.add("animate-language-switcher");
+}
+
+function animateContainersSection1() {
   const container1 = document.querySelector("#section-1 .container-1");
   container1.classList.add("animate-container-1");
 

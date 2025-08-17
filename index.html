@@ -51,19 +51,19 @@
     <nav id="nav" class="disable">
       <ul id="menu">
         <li onclick="scrollToSobre()">
-          <button>Sobre</button>
+          <button data-translate-key="nav_about">Sobre</button>
         </li>
         <li onclick="scrollToHardSkills()">
-          <button>Tecnologias</button>
+          <button data-translate-key="nav_techs">Tecnologias</button>
         </li>
         <li onclick="scrollToExperiencia()">
-          <button>Experiência</button>
+          <button data-translate-key="nav_experience">Experiência</button>
         </li>
         <li onclick="scrollToProjetos()">
-          <button>Projetos</button>
+          <button data-translate-key="nav_projects">Projetos</button>
         </li>
         <li onclick="scrollToContato()">
-          <button>Contato</button>
+          <button data-translate-key="nav_contact">Contato</button>
         </li>
       </ul>
       <button id="menu-button">
@@ -73,6 +73,15 @@
       </button>
     </nav>
 
+    <div id="language-switcher" class="disable">
+      <button data-lang="pt" class="lang-btn active">
+        <img src="images/icons/bra.png" alt="PT-BR" />
+      </button>
+      <button data-lang="en" class="lang-btn">
+        <img src="images/icons/usa.png" alt="EN-US" />
+      </button>
+    </div>
+
     <section id="section-1" class="disable">
       <div class="container-1">
         <div class="title-subtitle">
@@ -80,7 +89,7 @@
           <span class="subtitle">&lt;Software Developer/&gt;</span>
         </div>
 
-        <span class="summary">
+        <span class="summary" data-translate-key="section1_summary">
           Formando em Sistemas de Informação pela Universidade de São Paulo (USP), tenho experiência
           em grandes empresas como Vivo (Telefônica Brasil), onde lidero a automação e
           desenvolvimento de pipelines de segurança (CI/CD); e a PRODAM/SP, onde atuei no
@@ -131,12 +140,12 @@
 
     <section id="section-2" class="disable">
       <div class="title-subtitle">
-        <span class="title">Sobre</span>
-        <span class="subtitle">Quem sou eu?</span>
+        <span class="title" data-translate-key="section2_title">Sobre</span>
+        <span class="subtitle" data-translate-key="section2_subtitle">Quem sou eu?</span>
       </div>
       <div class="about">
         <img class="me" src="./images/about/me.jpeg" />
-        <span class="description">
+        <span class="description" data-translate-key="section2_about_description">
           "Este é o meu espaço de trabalho, onde compartilho minha jornada e paixão pela tecnologia.
           Atualmente, estou cursando o oitavo período da Graduação em Sistemas de Informação na
           Universidade de São Paulo (USP), a maior universidade da América Latina. Minha aventura na
@@ -147,19 +156,23 @@
           gratuitos, eventos e bootcamps, sempre em busca de elevar meu nível de expertise."
         </span>
       </div>
-      <div class="cv-div"><button id="button-modal-cv">Currículo</button></div>
+      <div class="cv-div">
+        <button id="button-modal-cv" data-translate-key="section2_about_cv_button">
+          Currículo
+        </button>
+      </div>
     </section>
 
     <aside id="modal-cv">
-      <img id="cv" src="images/about/cv.png" />
-      <button id="close-modal">Fechar</button>
+      <img id="cv" src="images/about/cv-pt.png" />
+      <button id="close-modal" data-translate-key="modal_close_button">Fechar</button>
     </aside>
 
     <section id="section-3" class="disable">
       <div class="container">
         <div class="title-subtitle">
-          <span class="title">Tecnologias</span>
-          <span class="subtitle">O que eu sei</span>
+          <span class="title" data-translate-key="section3_title">Tecnologias</span>
+          <span class="subtitle" data-translate-key="section3_subtitle">O que eu sei</span>
         </div>
         <div id="particles-js"></div>
         <ul id="techs-list"></ul>
@@ -168,10 +181,9 @@
 
     <section id="section-4" class="disable">
       <div class="title-subtitle">
-        <span class="title"> Experiência </span>
-        <span class="subtitle">Onde trabalhei</span>
+        <span class="title" data-translate-key="section4_title">Experiência</span>
+        <span class="subtitle" data-translate-key="section4_subtitle">Onde trabalhei</span>
       </div>
-
       <div class="container">
         <div class="experiences">
           <button class="experience-tab prodam" data-key="prodam">
@@ -199,8 +211,8 @@
 
     <section id="section-5" class="disable">
       <div class="title-subtitle">
-        <span class="title"> Projetos de Estudo </span>
-        <span class="subtitle">Aplicações</span>
+        <span class="title" data-translate-key="section5_title">Projetos de Estudo</span>
+        <span class="subtitle" data-translate-key="section5_subtitle">Aplicações</span>
       </div>
 
       <div class="container">
@@ -218,73 +230,88 @@
 
     <section id="section-6" class="disable">
       <div class="title-subtitle">
-        <span class="title"> Contato </span>
-        <span class="subtitle">fale comigo</span>
+        <span class="title" data-translate-key="section6_title">Contato</span>
+        <span class="subtitle" data-translate-key="section6_subtitle">fale comigo</span>
       </div>
 
       <div class="container">
         <form action="https://formspree.io/f/mnnzynvk" method="POST">
-          <span>Envie um email:</span>
+          <span data-translate-key="section6_form_title">Envie um email:</span>
 
           <div class="fullname">
             <label for="firstname-input">
-              Nome
+              <span data-translate-key="section6_form_firstname_label">Nome</span>
               <input
                 id="firstname-input"
-                placeholder="Ex: Leonardo"
                 type="text"
                 name="Nome"
                 required
+                data-translate-key="section6_form_firstname_placeholder"
+                placeholder="Ex: Leonardo"
               />
             </label>
             <label for="lastname-input">
-              Sobrenome
+              <span data-translate-key="section6_form_lastname_label">Sobrenome</span>
               <input
                 id="lastname-input"
-                placeholder="Ex: Aoun"
                 type="text"
                 name="Sobrenome"
                 required
+                data-translate-key="section6_form_lastname_placeholder"
+                placeholder="Ex: Aoun"
               />
             </label>
           </div>
 
           <div class="email-phone">
             <label for="email-input">
-              Email:
+              <span data-translate-key="section6_form_email_label">Email:</span>
               <input
                 id="email-input"
-                placeholder="Ex: leonardoaoundev@gmail.com"
                 type="email"
                 name="Email"
                 required
+                data-translate-key="section6_form_email_placeholder"
+                placeholder="Ex: leonardoaoundev@gmail.com"
               />
             </label>
             <label for="phone-input">
-              Telefone (com DDD)
-              <input id="phone-input" placeholder="Ex: 11 94032-5586" type="tel" name="Telefone" />
+              <span data-translate-key="section6_form_phone_label">Telefone (com DDD)</span>
+              <input
+                id="phone-input"
+                type="tel"
+                name="Telefone"
+                data-translate-key="section6_form_phone_placeholder"
+                placeholder="Ex: 11 94032-5586"
+              />
             </label>
           </div>
 
           <div class="message">
-            <label for="message-input"
-              >Mensagem
+            <label for="message-input">
+              <span data-translate-key="section6_form_message_label">Mensagem</span>
               <textarea
                 id="message-input"
-                placeholder="Escreva sua mensagem aqui..."
                 name="Mensagem"
                 required
+                data-translate-key="section6_form_message_placeholder"
+                placeholder="Escreva sua mensagem aqui..."
               ></textarea>
             </label>
           </div>
 
-          <input id="submit-email" type="submit" value="Enviar" />
+          <input
+            id="submit-email"
+            type="submit"
+            data-translate-key="section6_form_submit_button"
+            value="Enviar"
+          />
         </form>
 
         <div class="details">
           <div class="background-contact-info">
             <div class="contact-info">
-              <span>Informações</span>
+              <span data-translate-key="section6_info_title">Informações</span>
               <div class="adress">
                 <div class="background-icon">
                   <img src="images/icons/location.png" />
@@ -303,7 +330,7 @@
                   <img src="images/icons/phone.png" />
                 </div>
 
-                <span>(11)94032-5586</span>
+                <span>(11) 94032-5586</span>
               </div>
             </div>
           </div>
@@ -320,9 +347,10 @@
     </section>
 
     <footer>
-      <span>© 2025 Leonardo Aoun - Todos os direitos reservados</span>
+      <span data-translate-key="footer_all_rights_reserved">© 2025 Leonardo Aoun - Todos os direitos reservados</span>
     </footer>
 
+    <script defer src="./scripts/language/translations.js"></script>
     <script defer src="./scripts/elements.js"></script>
     <script defer src="./scripts/loading.js"></script>
     <script defer src="./scripts/reachSections.js"></script>
@@ -339,6 +367,6 @@
     <script defer src="./scripts/section-5/projects.js"></script>
     <script defer src="./scripts/section-5/carousel.js"></script>
     <script async src="./scripts/section-6/contactForms.js"></script>
-    <script async src="https://smtpjs.com/v3/smtp.js"></script>
+    <script defer src="./scripts/language/language.js"></script>
   </body>
 </html>

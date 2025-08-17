@@ -1,0 +1,53 @@
+@keyframes animateLanguageSwitcher {
+  from {
+    transform: translateY(-1.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-language-switcher {
+  animation: animateLanguageSwitcher 2.5s cubic-bezier(0.5, 0, 0, 1) 0.4s forwards;
+}
+
+#language-switcher {
+  margin: 10rem auto 0 auto;
+  display: flex;
+  gap: 3rem;
+}
+
+#language-switcher .lang-btn {
+  cursor: pointer;
+  background: none;
+
+  width: 3rem;
+  padding: 0;
+  border: none;
+
+  opacity: 0.6;
+  filter: grayscale(1);
+  transform: scale(0.9);
+
+  transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
+
+  &:not(.active):hover {
+    opacity: 1;
+    transform: scale(1);
+    filter: grayscale(0.2);
+  }
+}
+
+#language-switcher .lang-btn.active {
+  cursor: default;
+  opacity: 1;
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+#language-switcher .lang-btn img {
+  width: 100%;
+  height: auto;
+}
