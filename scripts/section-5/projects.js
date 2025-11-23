@@ -5,6 +5,20 @@ function renderProjects(lang) {
   const projectsData = [
     {
       title: {
+        pt: "Jobinder Backend",
+        en: "Jobinder Backend",
+      },
+      videoSrc: "jobinder",
+      techs: ["java", "springboot", "rabbitmq", "redis", "postgresql", "docker"],
+      description: {
+        pt: `Backend robusto construído em arquitetura de microsserviços orientada a eventos com Java 17 e Spring Boot 3. O sistema gerencia autenticação (JWT), comunicação assíncrona (RabbitMQ) e chat em tempo real (WebSockets). Cada serviço (Auth, Identity, Matching e Chat) possui seu banco de dados isolado, garantindo desacoplamento e escalabilidade, tudo orquestrado via Docker Compose e documentado com Swagger.`,
+        en: `Robust Backend built on an event-driven microservices architecture using Java 17 and Spring Boot 3. The system manages authentication (JWT), asynchronous communication (RabbitMQ), and real-time chat (WebSockets). Each service (Auth, Identity, Matching and Chat) has an isolated database, ensuring decoupling and scalability, all orchestrated via Docker Compose and documented with Swagger.`,
+      },
+      codeLink: "https://github.com/LeoAoun/Jobinder-Backend-Java",
+      siteLink: null,
+    },
+    {
+      title: {
         pt: "Jobinder",
         en: "Jobinder",
       },
