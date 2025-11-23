@@ -304,6 +304,10 @@ body {
     height: 4rem;
   }
 
+   #section-4 .container .card {
+    max-height: 23.5rem;
+  }
+
   #section-5 {
     width: 100%;
   }
@@ -344,7 +348,7 @@ body {
   }
 
   #section-4 .container .card {
-    max-height: 18rem;
+    max-height: 19rem;
   }
 
   #section-4 .container .card #card-description {
@@ -389,7 +393,7 @@ body {
   }
 
   #section-4 .container .card {
-    max-height: 23rem;
+    max-height: 25rem;
   }
 
   #section-4 .container .card #card-description {
@@ -457,7 +461,7 @@ body {
   }
 
   #section-4 .container .card {
-    max-height: 27rem;
+    max-height: 29rem;
   }
 
   #section-5 .container {
@@ -589,7 +593,7 @@ body {
   }
 
   #section-4 .container .card {
-    max-height: 27rem;
+    max-height: 29rem;
   }
 
   #section-4 .container .card .card-title-date #card-title {
@@ -687,7 +691,7 @@ body {
   }
 
   #section-4 .container .card {
-    max-height: 30rem;
+    max-height: 32rem;
   }
 
   #section-4 .container .card .card-title-date #card-title {
@@ -770,7 +774,7 @@ body {
   }
 
   #section-4 .container .card {
-    max-height: 35rem;
+    /* max-height: 35rem; */
   }
 
   #section-4 .container .card .card-title-date #card-title {

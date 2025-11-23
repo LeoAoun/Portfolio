@@ -33,8 +33,8 @@ const experiencesData = {
     business: "Vivo (Telefônica)",
     date: "03/2025 - Atualmente",
     description: {
-      pt: `Lidero a implementação de pipelines de segurança CI/CD na Vivo, atuando como ponto focal técnico para as equipes de engenharia. Apoio a integração de um ecossistema de ferramentas de DevSecOps (SAST, DAST, SCA, IaC Scanning, ASPM, etc.) e soluciono desafios de conectividade para garantir a conformidade dos projetos. Adicionalmente, desenvolvo automações em Python para otimizar a produtividade e o fluxo de trabalho da equipe.`,
-      en: `I lead the implementation of CI/CD security pipelines at Vivo, acting as a technical point of contact for the engineering teams. I support the integration of a DevSecOps tool ecosystem (SAST, DAST, SCA, IaC Scanning, ASPM, etc.) and solve connectivity challenges to ensure project compliance. Additionally, I develop Python automations to optimize the team's productivity and workflow.`,
+      pt: `Desenvolvo aplicações baseadas em arquitetura de microsserviços utilizando Java (Spring Boot) e Node.js (TypeScript) no back-end, com comunicação assíncrona via RabbitMQ, persistência em PostgreSQL e Redis, e interfaces em React (Next.js), aplicando testes automatizados com JUnit e Mockito. Simultaneamente, atuo com DevSecOps na implementação de pipelines de CI/CD para a engenharia, integrando validações de segurança (SAST, DAST, SCA, IaC Scanning, SBOM Scanning e ASPM) para assegurar a conformidade dos projetos.`,
+      en: `I develop microservices-based applications using Java (Spring Boot) and Node.js (TypeScript) on the backend, with asynchronous communication via RabbitMQ, persistence in PostgreSQL and Redis, and interfaces in React (Next.js), applying automated tests with JUnit and Mockito. Simultaneously, I work in DevSecOps implementing CI/CD pipelines for the engineering team, integrating security validations (SAST, DAST, SCA, IaC Scanning, SBOM Scanning, and ASPM) to ensure project compliance.`,
     },
   },
 };
