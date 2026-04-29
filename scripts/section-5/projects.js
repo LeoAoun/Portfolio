@@ -5,6 +5,34 @@ function renderProjects(lang) {
   const projectsData = [
     {
       title: {
+        pt: "Crypto Price Alert System (CPAS)",
+        en: "Crypto Price Alert System (CPAS)",
+      },
+      videoSrc: "cpas.png",
+      techs: ["nextjs", "postgresql", "tailwindcss", "typescript"],
+      description: {
+        pt: `Sistema de alerta de preços de criptomoedas em tempo real. A aplicação monitora o mercado e notifica os usuários via WhatsApp quando condições personalizadas são atingidas. Possui um motor de avaliação inteligente que agrupa múltiplas notificações para evitar spam, desenvolvido como uma aplicação fullstack com Next.js, PostgreSQL e integração com a API da CoinGecko.`,
+        en: `A real-time cryptocurrency price alert system. The application monitors market prices and notifies users via WhatsApp when custom predefined conditions are met. It features an intelligent evaluation engine that batches multiple alerts into a single message to prevent notification fatigue, developed as a fullstack application with Next.js, PostgreSQL, and integrated with the CoinGecko API.`,
+      },
+      codeLink: "https://github.com/LeoAoun/Crypto-Price-Alert-System-App",
+      siteLink: "https://crypto-price-alert-system-app.vercel.app",
+    },
+    {
+      title: {
+        pt: "Crypto Price Alert System (CPAS) - Backend",
+        en: "Crypto Price Alert System (CPAS) - Backend",
+      },
+      videoSrc: "cpas.png",
+      techs: ["java", "springboot", "kafka", "postgresql", "docker"],
+      description: {
+        pt: `Backend robusto baseado em arquitetura de microsserviços para alertas de preços de criptomoedas em tempo real. O sistema utiliza comunicação assíncrona via Kafka para desacoplamento e escalabilidade, integrando serviços de Identidade (JWT RSA), Preferências, Busca de Preços e um Motor de Avaliação que notifica os usuários via WhatsApp.`,
+        en: `A robust microservices-based backend system for real-time cryptocurrency price alerts. The system leverages asynchronous communication via Kafka for decoupling and scalability, integrating services for Identity (RSA-signed JWT), User Preferences, Price Fetching, and an Evaluation Engine that notifies users via WhatsApp.`,
+      },
+      codeLink: "https://github.com/LeoAoun/Crypto-Price-Alert-System-Backend",
+      siteLink: null,
+    },
+    {
+      title: {
         pt: "Jobinder Backend",
         en: "Jobinder Backend",
       },
@@ -129,7 +157,11 @@ function renderProjects(lang) {
       <div class="project">
         <div class="container-1">
           <div class="video">
-            <video muted autoplay loop src="./videos/${project.videoSrc}.mp4" type="video/mp4"></video>
+            ${
+              project.videoSrc.includes(".")
+                ? `<img src="./videos/${project.videoSrc}">`
+                : `<video muted autoplay loop src="./videos/${project.videoSrc}.mp4" type="video/mp4"></video>`
+            }
           </div>
         </div>
         <div class="container-2">

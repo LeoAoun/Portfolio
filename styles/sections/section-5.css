@@ -171,8 +171,13 @@
   justify-content: center;
 }
 
-#section-5 .container-1 .video video {
+#section-5 .container-1 .video video,
+#section-5 .container-1 .video img {
   width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 #section-5 .container-2 {

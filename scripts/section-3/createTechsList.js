@@ -1,8 +1,7 @@
 const techsList = document.getElementById("techs-list");
 
 const techs = [
-  { name: "React", stack: "Front-End", src: "react" },
-  { name: "Angular", stack: "Front-End", src: "angular" },
+  { name: "NextJS", stack: "Front-End", src: "nextjs" },
   { name: "Typescript", stack: "Full Stack", src: "typescript" },
   { name: "TailwindCSS", stack: "Front-End", src: "tailwindcss" },
   { name: "Bootstrap", stack: "Front-End", src: "bootstrap" },
@@ -11,6 +10,7 @@ const techs = [
   { name: "C#", stack: "Back-End", src: "csharp" },
   { name: "Spring Boot", stack: "ORM", src: "springboot" },
   { name: "Prisma", stack: "ORM", src: "prisma" },
+  { name: "Kafka", stack: "Messaging", src: "kafka" },
   { name: "RabbitMQ", stack: "Messaging", src: "rabbitmq" },
   { name: "Mongodb", stack: "Database", src: "mongodb" },
   { name: "Redis", stack: "Database", src: "redis" },

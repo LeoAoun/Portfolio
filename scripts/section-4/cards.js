@@ -33,8 +33,8 @@ const experiencesData = {
     business: "Vivo (Telefônica)",
     date: "03/2025 - Atualmente",
     description: {
-      pt: `Desenvolvo aplicações baseadas em arquitetura de microsserviços utilizando Java (Spring Boot) e Node.js (TypeScript) no back-end, com comunicação assíncrona via Apache Kafka, persistência em PostgreSQL e Redis, e interfaces em Next.js, aplicando testes automatizados com JUnit e Mockito. Simultaneamente, atuo com DevSecOps na implementação de pipelines de CI/CD para a engenharia, integrando validações de segurança (SAST, DAST, SCA, IaC Scanning, SBOM Scanning) para assegurar a conformidade dos projetos.`,
-      en: `I develop microservices-based applications using Java (Spring Boot) and Node.js (TypeScript) on the backend, with asynchronous communication via Apache Kafka, persistence in PostgreSQL and Redis, and interfaces in Next.js, applying automated tests with JUnit and Mockito. Simultaneously, I work in DevSecOps implementing CI/CD pipelines for the engineering team, integrating security validations (SAST, DAST, SCA, IaC Scanning, SBOM Scanning) to ensure project compliance.`,
+      pt: `Desenvolvo aplicações baseadas em arquitetura de microsserviços utilizando Java (Spring Boot) e Node.js (TypeScript) no back-end, com comunicação assíncrona via Apache Kafka, persistência em PostgreSQL e MongoDB, e interfaces em Next.js, aplicando testes automatizados com JUnit e Mockito. Simultaneamente, atuo com DevSecOps na implementação de pipelines de CI/CD para a engenharia, integrando validações de segurança (SAST, DAST, SCA, IaC Scanning, SBOM Scanning) para assegurar a conformidade dos projetos.`,
+      en: `I develop microservices-based applications using Java (Spring Boot) and Node.js (TypeScript) on the backend, with asynchronous communication via Apache Kafka, persistence in PostgreSQL and MongoDB, and interfaces in Next.js, applying automated tests with JUnit and Mockito. Simultaneously, I work in DevSecOps implementing CI/CD pipelines for the engineering team, integrating security validations (SAST, DAST, SCA, IaC Scanning, SBOM Scanning) to ensure project compliance.`,
     },
   },
 };
